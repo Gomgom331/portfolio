@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+.blob2 {
+  position: absolute;
+  top: 10;
+  left: 10;
+  fill: #f1d79e;
+  width: 70vmax;
+  z-index: 0;
+  animation: move2 10s ease-in-out infinite;
+  transform-origin: 20% 20%;
+  mix-blend-mode: multiply;
+}
+
+@keyframes move2 {
+  0%   { transform: scale(0.5)   translate(-50px, 0px); }
+  30%  { transform: scale(0.7, 0.7) translate(30vw, 90vh) rotate(180deg); }
+  50%  { transform: scale(0.7, 0.7) translate(30vw, 90vh) rotate(180deg); }
+  70%  { transform: scale(0.8) translate(50vw, 0vh) rotate(-20deg); }
+  80%  { transform: scale(0.8) translate(50vw, 0vh) rotate(-20deg); }
+  90%  { transform: scale(0.7) translate(0vw, 0vh) rotate(-20deg); }
+  100% { transform: scale(0.5)   translate(-50px, 0px); }
+}

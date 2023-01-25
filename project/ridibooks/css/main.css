@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+    
+    /**********************도서 부분**********************/
+    #header_subtitle {max-width: 1170px; margin:0 auto; height: auto;}
+    #header_subtitle .header_category {max-width: 1170px; height: 60px; border-bottom: 1px solid #f5f5f5; padding:0 30px 0 18px;}
+        .header_category ul {height: 60px; display: flex; justify-content: space-between; align-items:center;}
+        .header_category ul .header_mini_title a {font-size:24px; font-weight:700; color:#0064ff; padding:14px 12px 17px;}
+
+        .header_category ul .header_category_text a {display: flex; height: 60px; align-items: center; justify-content: center;}
+        .header_category ul .header_category_text a {font-size:14px; font-weight: 600; color:#141414;}
+        .header_category ul .header_category_text a svg {font-size:26px; margin:0 6px 0 0; transition: ease-in 0.1s;}
+        .header_category ul .header_category_text a:hover {opacity: 0.5;}
+
+    /*추천 등 nav 부분*/
+    #header_subtitle .header_category2 {max-width: 1170px; height: 60px; padding:7px 28px;}
+        .header_category2 ul {height: 60px; display: flex; align-items:center;}
+        .header_category2 ul li {padding:5px 10px; background-color: #fff; border-radius: 40px;}
+        .header_category2 ul li a {font-size:16px; font-weight: 500; margin:6px 2px; transition: ease-in 0.12s;}
+        /*체크*/
+        .header_category2 ul li:first-child {background-color: #0064ff;}
+        .header_category2 ul li:first-child a {color:#fff; font-weight: 700;}
+        /*hover*/
+        .header_category2 ul li:not(:first-child):hover a {opacity: 0.5;}
+
+    /***********************슬라이더***********************/
+    #slider {
+        max-width: 1170px; margin:0 auto; 
+        padding-left: 30px; 
+        padding-right: 30px;
+        position: relative;
+        z-index: 3;
+    }
+    #slider .slider_box {
+        position:relative; 
+        max-width:1116px; 
+        height: 400px;
+        margin:0 -3px; 
+        background-color:#fff;
+        overflow: hidden;
+    }
+    #slider .slider_box .sliderCont{
+        width: 1116px;
+        height:400px;
+        position: relative;
+        transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+    }
+    #slider .slider_box .sliderCont ul {
+        width:1116px; height: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #slider .slider_box .sliderCont ul li{
+        width:1116px; height: 400px;
+        position: relative;
+        cursor:pointer;
+    }
+    #slider .slider_box .sliderCont ul li a img {
+        width: 100%; margin:-40px 0 0 0px; z-index: 10;
+    }
+    /*배너 텍스트*/
+    #slider .slider_box .sliderCont ul li a .banner_textbox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(28, 28, 28, 0), rgb(32, 32, 32, 0.7));
+        padding: 250px 0 0 40px;
+    }
+
+    #slider .slider_box .sliderCont ul li a .banner_textbox h3 {
+        font-size: 32px;
+        color:#fff;
+        margin:0 0 10px 0px;
+    }
+    #slider .slider_box .sliderCont ul li a .banner_textbox p {
+        font-size: 16px;
+        color: #fff;
+    }
+
+/*슬라이더 dot_버튼*/
+    .slider_dot:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .slider_dot{
+        position:absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+    }
+    .slider_dot>li{
+        float: left;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-indent: -9999px;
+        cursor:pointer;
+        opacity: 0.5;
+    }
+    .slider_dot>li.dot_on {
+        transition: 0.3s;
+        opacity: 1;
+    }
+/*슬라이더_버튼*/
+    #slider .slider_btn {
+        position: absolute; 
+        top:0; left:0; right:0; bottom:10%; 
+        margin:0 0px;
+        display: flex; 
+        justify-content: space-between; 
+        z-index: 4;
+        pointer-events: none;
+    }
+    .slider_btn .slider_btn_left {
+        width:40px; height: 40px; 
+        pointer-events: all;
+        cursor:pointer;
+        background-color: #fff; 
+        box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+        border-radius: 50%; border: 1px solid #f0f0f0; 
+        color: #141414; font-size: 16px; 
+        position:absolute; 
+        top:50%; left:0; 
+        transition: ease-in 0.3s;
+        margin:0 0 0 5px;
+    }
+    .slider_btn .slider_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+    .slider_btn .slider_btn_left:hover svg {opacity: 0.5}
+
+
+    .slider_btn .slider_btn_right {
+        width:40px; height: 40px; 
+        margin:0 5px 0 0px;
+        pointer-events: all;
+        cursor:pointer; 
+        background-color: #fff; 
+        box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+        border-radius: 50%; 
+        border: 1px solid #f0f0f0; 
+        font-size: 16px; position:absolute; 
+        top:50%; right:0; 
+        transition: ease-in 0.3s
+    }
+    .slider_btn .slider_btn_right svg {margin:1px 0 0 3px;}
+    .slider_btn .slider_btn_right:hover svg {opacity: 0.5}
+    
+
+     /***********************fig1 카테고리***********************/
+     .fig1 {max-width:1170px; margin: 0 auto; margin-top:30px; padding-left:30px; padding-right:30px;}
+     .fig1 .fig1_box ul {margin:0px 205px; height: 94px; display: flex; align-items: center; justify-content: center;}
+            .fig1_box ul li {margin:0 10px;}
+            .fig1_box ul li:hover div.fig1_box_img>img{
+                filter: drop-shadow(1px 1px 1px #cccccc);
+                transition: 0.2s;
+            }
+            .fig1_box ul li a {display: flex; flex-direction: column; align-items: center;}
+                            .fig1_box_img > img {width: 70px; height: 70px;}
+                            .fig1_box_text {font-size:13px; font-weight:500; color:#141414; text-align: center; margin-top:8px;} 
+
+    /*fig2 배너*/
+    .fig2_banner {max-width: 1170px; margin:0 auto; margin-top:40px;}
+
+            /*fig 공통 헤더 타이틀*/
+            .fig_header {max-width: 1170px; margin: 0 auto; padding: 6px 30px 16px; display: flex;}
+            .fig_header_font {font-size:22px; font-weight: 700;line-height: 26px; color:#141414;}
+            /*********************/
+
+    .fig2_banner .fig2_banner_box {max-width:1170px; margin:0 auto; padding-left: 30px; padding-right: 30px;}
+        .fig2_banner_box2 {position:relative;}
+        /***********fig2_banner_ulbox 슬라이드 만들때 overflow hidden꼭하기**************/
+        .fig2_banner_ulbox {width:100%; display: flex; overflow: hidden;}
+        .fig2_banner_ul {display: flex; margin-left: 0px;}
+        .fig2_banner_li {width:calc(370px); padding-right: 6px;}
+        .fig2_banner_li a {width: 100%; height: 226px; display:flex; flex-direction:column;}
+        .fig2_banner_img {height:140px; display:flex; position:relative; 
+                    justify-content: center; align-items: flex-start; margin-bottom:20px;}
+        .fig2_banner_book {width:150px; height:150px; position: relative; display: flex; justify-content: center; align-items: flex-end; z-index: 2;}
+            .fig2_banner_bookimg {width:auto; height:100%; position: relative; border-radius:4px; overflow:hidden; z-index:2;}
+                .fig2_banner_bookimg2 {position:relative; overflow: hidden; width:90%}
+            .fig2_imghidden {width:100%; height:10px; position: absolute; bottom:0; left:0; z-index: 100; background-color :#fff;}
+        .fig2_banner_bg {width:100%;height: 100px; position:absolute; bottom:0; left:50%; border-radius:4px; overflow: hidden;
+                        z-index: 0; transform: translate(-50%,0px); background-color: #0064ff;}
+        .fig2_banner_text {display: flex; flex-direction: column; align-items: center; text-align: center;} 
+
+
+
+
+    /*fig2 배너 버튼*/
+    .fig2_btn {position: absolute; top:0; left:0; right:0; bottom:0; margin:0 -20px; z-index: 10;pointer-events: none;}
+    .fig2_btn .fig2_btn_left {
+            width:40px; height: 40px; 
+            cursor:pointer; background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            color: #141414; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; left:0; 
+            pointer-events: fill;
+            transition: ease-in 0.3s;
+        }
+    .fig2_btn .fig2_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+    .fig2_btn .fig2_btn_left:hover svg {opacity: 0.5}
+
+
+    .fig2_btn .fig2_btn_right {
+        width:40px; height: 40px; 
+        cursor:pointer; background-color: #fff; 
+        box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+        margin-top: -45px;
+        border-radius: 50%; 
+        border: 1px solid #f0f0f0; 
+        font-size: 16px; 
+        position:absolute; 
+        top:50%; right:0; 
+        transition: ease-in 0.3s;
+        pointer-events: fill;
+    }
+    .fig2_btn .fig2_btn_right svg {margin:1px 0 0 3px;}
+    .fig2_btn .fig2_btn_right:hover svg {opacity: 0.5}
+                            
+    
+    /***********************fig3_1 지금 많이 읽고 있는 책***********************/
+    .fig3_1 {max-width: 1170px; padding-left: 30px; padding-right:30px; padding-bottom:30px; margin:0 auto; margin-top:40px; position:relative;}
+    .fig3_1 .fig_header {max-width: 1170px; margin: 0 auto; padding: 6px 0px 16px; display: flex;}
+
+            .fig3_category {position:relative;}
+            /*** overflow:hidden;하기***/
+            .fig3_category_box {display:flex; width:100%; overflow: hidden;}
+
+            .fig3_category_ul {display: flex; max-height:360px;}
+            .fig3_ol li:not(:nth-of-type(3n)) {margin-bottom: 6px;}
+            .fig3_book {width:370px; height:116px;}
+            .fig3_bookbox {position:relative; display: flex; height: 100%;}
+            .fig3_bookimg {width:80px; display: flex; flex-direction: column; align-items: stretch; justify-content: center;}
+
+            .fig3_booknumber {width:80px; height:100%; display: flex; justify-content: center; align-items: center;}
+
+            .fig3_booktitle {width:184px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+            .fig3_mark {display: flex; align-items: center;}
+
+        /*fig3_1버튼*/
+        .fig3_btn {position: absolute; top:0; left:0; right:0; bottom:0; margin:0 -20px; z-index: 10; display: flex; justify-content: space-between; pointer-events: none}
+        .fig3_btn .fig3_btn_left {
+            width:40px; height: 40px; 
+            cursor:pointer; background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%;
+            pointer-events: all;
+            border: 1px solid #f0f0f0; 
+            color: #141414; font-size: 16px; 
+            position:absolute; 
+            top:50%; left:0; 
+            transition: ease-in 0.3s;
+        }
+        .fig3_btn .fig3_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+        .fig3_btn .fig3_btn_left:hover svg {opacity: 0.5}
+
+
+        .fig3_btn .fig3_btn_right {
+            width:40px; height: 40px; 
+            cursor:pointer; 
+            background-color: #fff; 
+            pointer-events: all;
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; right:0; 
+            transition: ease-in 0.3s
+        }
+        .fig3_btn .fig3_btn_right svg {margin:1px 0 0 3px;}
+        .fig3_btn .fig3_btn_right:hover svg {opacity: 0.5}
+
+
+
+    /***********************fig4 새로 나온 책***********************/
+    .fig4 {max-width:1170px; margin:0 auto; padding-left:30px; padding-right: 30px; margin-top:40px}
+    .fig4 .fig_header {max-width: 1170px; margin: 0 auto; padding: 6px 0px 16px; display: flex;}
+    .fig4 .fig_header_font a {font-size:22px; font-weight: 700;line-height: 26px; color:#141414;}
+            .fig_header_font a svg {font-size: 16px; margin:0 0 0px -6px;}
+            
+            .fig4_category {position:relative;}
+            /***********************overflow: hidden하기***********************/
+            .fig4_categorybox {flex-wrap:nowrap; overflow: hidden;}
+            .fig4_contents {display: flex;}
+            .fig4_ul {display: flex;}
+
+        /*fig4_columnbox*/
+            .fig4_ul .fig4_columnbox {margin-right:6px; width: 180px; display: flex; flex-direction: column;}
+            .fig4_bookimg {width:100%; position:relative; align-self: stretch; padding-bottom: 5%;}
+
+            .fig4_text {width: 100%;}
+            .fig4_marl {text-align: center;}
+
+
+
+        /*fig4_saletag*/
+            .sale_tag {position:relative; left:0; right:0; display:flex; display: none;
+                border-bottom-left-radius:4px; border-top-right-radius:4px; overflow:hidden; width: 24px; height:24px;}
+            .sale_10 {display:flex; justify-content: center; align-items: center; text-align:center; color:#fff;
+                background-color: rgb(220, 50, 50);width: 100%; height: 100%;}
+
+
+
+        /*fig4 버튼*/
+        .fig4_btn {position: absolute; top:0; left:0; right:0; bottom:0; margin:0 -20px; z-index: 10; pointer-events: none;}
+        .fig4_btn .fig4_btn_left {
+            width:40px; height: 40px; 
+            cursor:pointer; 
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            color: #141414; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; left:0; 
+            transition: ease-in 0.3s;
+        }
+        .fig4_btn .fig4_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+        .fig4_btn .fig4_btn_left:hover svg {opacity: 0.5}
+
+
+        .fig4_btn .fig4_btn_right {
+            width:40px; height: 40px; 
+            cursor:pointer;
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; right:0; 
+            transition: ease-in 0.3s
+        }
+        .fig4_btn .fig4_btn_right svg {margin:1px 0 0 3px;}
+        .fig4_btn .fig4_btn_right:hover svg {opacity: 0.5}
+
+
+
+
+    /***********************fig5 베스트셀러***********************/
+    .fig5 {max-width: 1170px; padding-left: 30px; padding-right:30px; padding-bottom:30px; margin:0 auto; margin-top:40px; position:relative;}
+
+    .fig5_header {max-width: 1170px; margin: 0 auto; padding: 6px 30px 16px 0px; display: flex;}
+    .fig5_header_font {font-size:22px; font-weight: 700;line-height: 26px; color:#141414;}
+
+    .fig5 .fig_header_font5 a {font-size:22px; font-weight: 700;line-height: 26px; color:#141414;}
+    .fig5 .fig_header_font5 a svg {font-size: 16px; margin:0 0 0px -6px; padding:0 0 0 0;}
+            .fig5_category {position:relative;}
+            /*** overflow:hidden;하기***/
+            .fig5_category_box {display:flex; width:100%; overflow: hidden;}
+
+            .fig5_category_ul {display: flex; max-height:360px;}
+            .fig5_ol li:not(:nth-of-type(3n)) {margin-bottom: 6px;}
+            .fig5_book {width:370px; height:116px;}
+            .fig5_bookbox {position:relative; display: flex; height: 100%;}
+            .fig5_bookimg {width:80px; display: flex; flex-direction: column; align-items: stretch; justify-content: center;}
+
+            .fig5_booknumber {width:80px; height:100%; display: flex; justify-content: center; align-items: center;}
+
+            .fig5_booktitle {width:184px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+            .fig5_mark {display: flex; align-items: center;}
+
+        /*fig5_1버튼*/
+        .fig5_btn {position: absolute; top:0; left:0; right:0; bottom:0; margin:0 -20px; z-index: 10; display: flex; justify-content: space-between; pointer-events: none}
+        .fig5_btn .fig5_btn_left {
+            width:40px; height: 40px; 
+            cursor:pointer; 
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            color: #141414; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; left:0; 
+            transition: ease-in 0.3s;
+        }
+        .fig5_btn .fig5_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+        .fig5_btn .fig5_btn_left:hover svg {opacity: 0.5}
+
+
+        .fig5_btn .fig5_btn_right {
+            width:40px; height: 40px; 
+            cursor:pointer;
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; right:0; 
+            transition: ease-in 0.3s
+        }
+        .fig5_btn .fig5_btn_right svg {margin:1px 0 0 3px;}
+        .fig5_btn .fig5_btn_right:hover svg {opacity: 0.5}
+
+
+
+    /***********************fig6 MD'S PICK***********************/
+
+
+    .fig6 {max-width:1170px; margin:0 auto; padding-left:30px; padding-right: 30px; margin-top:40px}
+    .fig6 .fig_header {max-width: 1170px; margin: 0 auto; padding: 6px 0px 16px; display: flex;}
+    .fig6 .fig_header_font a {font-size:22px; font-weight: 700;line-height: 26px; color:#141414;}
+            .fig_header_font a svg {font-size: 16px; margin:0 0 0px -6px;}
+            
+            .fig6_category {position:relative;}
+            /***********************overflow: hidden하기***********************/
+            .fig6_categorybox {flex-wrap:nowrap; overflow: hidden;}
+            .fig6_contents {display: flex;}
+            .fig6_ul {display: flex;}
+
+        /*fig6_columnbox*/
+            .fig6_ul .fig6_columnbox {margin-right:6px; width: 180px; display: flex; flex-direction: column;}
+            .fig6_bookimg {width:100%; position:relative; align-self: stretch; padding-bottom: 5%;}
+
+            .fig6_text {width: 100%;}
+            .fig6_marl {text-align: center;}
+
+
+
+        /*fig6_saletag*/
+            .sale_tag {position:relative; left:0; right:0; display:flex; display: none;
+                border-bottom-left-radius:4px; border-top-right-radius:4px; overflow:hidden; width: 24px; height:24px;}
+            .sale_10 {display:flex; justify-content: center; align-items: center; text-align:center; color:#fff;
+                background-color: rgb(220, 50, 50);width: 100%; height: 100%;}
+
+
+
+        /*fig6 버튼*/
+        .fig6_btn {position: absolute; top:0; left:0; right:0; bottom:0; margin:0 -20px; z-index: 10; pointer-events: none;}
+        .fig6_btn .fig6_btn_left {
+            width:40px; height: 40px; 
+            cursor:pointer; 
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            color: #141414; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; left:0; 
+            transition: ease-in 0.3s;
+        }
+        .fig6_btn .fig6_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+        .fig6_btn .fig6_btn_left:hover svg {opacity: 0.5}
+
+
+        .fig6_btn .fig6_btn_right {
+            width:40px; height: 40px; 
+            cursor:pointer; 
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            font-size: 16px; position:absolute; 
+            top:50%; right:0; 
+            transition: ease-in 0.3s
+        }
+        .fig6_btn .fig6_btn_right svg {margin:1px 0 0 3px;}
+        .fig6_btn .fig6_btn_right:hover svg {opacity: 0.5}
+
+
+    /***********************fig7 리디북스 추천***********************/
+
+
+    .fig7 {max-width:1170px; margin:0 auto; padding-left:30px; padding-right: 30px; margin-top:40px}
+    .fig7 .fig_header {max-width: 1170px; margin: 0 auto; padding: 6px 0px 16px; display: flex;}
+    .fig7 .fig_header_font a {font-size:22px; font-weight: 700;line-height: 26px; color:#141414;}
+            .fig_header_font a svg {font-size: 16px; margin:0 0 0px -6px;}
+            
+            .fig7_category {position:relative;}
+            /***********************overflow: hidden하기***********************/
+            .fig7_categorybox {flex-wrap:nowrap; overflow: hidden;}
+            .fig7_contents {display: flex;}
+            .fig7_ul {display: flex;}
+
+        /*fig7_columnbox*/
+            .fig7_ul .fig7_columnbox {margin-right:6px; width: 180px; display: flex; flex-direction: column;}
+            .fig7_bookimg {width:100%; position:relative; align-self: stretch; padding-bottom: 5%;}
+
+            .fig7_text {width: 100%;}
+            .fig7_marl {text-align: center;}
+
+
+
+        /*fig7_saletag*/
+            .sale_tag {position:relative; left:0; right:0; display:flex; display: none;
+                border-bottom-left-radius:4px; border-top-right-radius:4px; overflow:hidden; width: 24px; height:24px;}
+            .sale_10 {display:flex; justify-content: center; align-items: center; text-align:center; color:#fff;
+                background-color: rgb(220, 50, 50);width: 100%; height: 100%;}
+
+
+
+        /*fig7 버튼*/
+        .fig7_btn {position: absolute; top:0; left:0; right:0; bottom:0; margin:0 -20px; z-index: 10; pointer-events: none;}
+        .fig7_btn .fig7_btn_left {
+            width:40px; height: 40px; 
+            cursor:pointer; 
+            pointer-events: all;
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            color: #141414; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; left:0; 
+            transition: ease-in 0.3s;
+        }
+        .fig7_btn .fig7_btn_left svg {transform: rotate(180deg);margin:1px 3px 0 0;}
+        .fig7_btn .fig7_btn_left:hover svg {opacity: 0.5}
+
+
+        .fig7_btn .fig7_btn_right {
+            width:40px; height: 40px; 
+            cursor:pointer;
+            pointer-events: all;
+            background-color: #fff; 
+            box-shadow:2px 4px 8px rgb(0 0 0 / 6%);
+            margin-top: -45px;
+            border-radius: 50%; 
+            border: 1px solid #f0f0f0; 
+            font-size: 16px; 
+            position:absolute; 
+            top:50%; right:0; 
+            transition: ease-in 0.3s
+        }
+        .fig7_btn .fig7_btn_right svg {margin:1px 0 0 3px;}
+        .fig7_btn .fig7_btn_right:hover svg {opacity: 0.5}

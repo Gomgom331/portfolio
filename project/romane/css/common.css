@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+	*{margin:0; padding:0; box-sizing:border-box;}
+	ul, li, ol{list-style: none; maegin:0; padding:0;}
+	a {text-decoration:none;}
+
+	#headertop {width:100%; height:40px; margin:0 auto; background-color:#fff; margin:0 auto; position:fixed; top:0; left:0; right:0; box-shadow:1px 1px 1px #d3d3d3; z-index:1;}
+	#bin {width:100%; height:40px;}
+	#headertop_nav {width:1260px; height:40px; margin:0 auto; background-color:#fff; margin:0 auto;}
+		#headertop_nav > .login_1 {width:270px; height:40px; float:left; background-color:#fff; padding:3px 0 5px 0;}
+		#headertop_nav  .login_1 ul  li {float:left; margin:3px; padding:8px 0px; font-size:12px;}
+		#headertop_nav  .login_1 ul  li a {display:bloack; text-decoration: none; color:#181818;}
+		#headertop_nav  .login_1 ul  li:hover {border-top:1px solid black;}
+
+		#headertop_nav > .login_1 > .snsbox {width:25px; height:25px; background-color:#ececec; float:right; border-radius:100px; margin:7px 3px;}
+		#headertop_nav > .login_1 > .snsbox > a > img {width:15px; height:15px; margin: 5px 5px; opacity:0.8;}
+		#headertop_nav > .login_1 > .snsbox:hover {transform: rotate(45deg); transition: all ease 1s; background-color:#d4d4d4;}
+
+		#headertop_nav > .login_2 {width:500px; height:40px; float:right; background-color:#fff; padding: 3px 0 0 0;}
+		#headertop_nav > .login_2 > .surch {width:150px; height:30px; float:right; background-color:#fff; padding:4px;}
+		#headertop_nav > .login_2 > .surch > .surch_1 {width:150px; height:20px; background-color:#fff; margin:3px; position: relative;}
+		#headertop_nav > .login_2 > .surch > .surch_1 > input {width:105px; height:20px; border:none; position: absolute; float:left; background-color:#ececec; font-size:10px;}
+		#headertop_nav > .login_2 > .surch > .surch_1 > button {float:right; width:20px; height:20px; border:none; margin:0 27px 0 0; background-color:#ececec; background-image: url("img/search2.png"); backgorund-size:contain; background-repeat: no-repeat; cursor: pointer;}
+
+		#headertop_nav  .login_2 ul {margin:0 0 0 35px;}
+		#headertop_nav  .login_2 ul  li {float:left; margin:3px; padding:8px 0px; font-size:12px;}
+		#headertop_nav  .login_2 ul  li a {display:bloack; text-decoration: none; color:#181818;}
+		#headertop_nav  .login_2 ul  li:hover {border-top:1px solid black;}
+		#headertop_nav  .login_2 ul  li a > img {width:13px;}
+
+		/*------------상단고정부분------------*/
+
+	header {height:221px; background-color:#fff; margin: 0 auto;}
+
+	#main_header {width:1260px; height:180px; margin: 0 auto; background-color:#fff;}
+		#main_header > .banner_1 {width:140px; height:140px; background-color:#fff; float:left; margin:20px 0px;}
+		#main_header > .banner_1 > a > img {width:140px; hight:140px;}
+
+		#main_header > .logo {width:400px; height:150px; background-color:#fff; float:left; margin:15px 0 15px 290px;}
+
+		#main_header > .banner_2 {width:350px; height:180px; background-color:#fff; float:right;}
+		#main_header > .banner_2 > a > img {width:350px; height:180px;}
+
+	nav {width:100%; height:40px; margin: 0 auto;border-top:1px solid #ececec; border-bottom:1px solid #ececec;}
+		nav > #main_nav {width:1260px; height:40px; background-color:#fff;; margin: 0 auto; border-bottom:1px solid #ececec;}
+		nav > #main_nav > .nav_1 {width:40px; height:40px; background-color:#fff; float:left; border-right:1px solid #ececec; border-left:1px solid #ececec; padding:10px; border-bottom:1px solid #ececec;}
+		nav > #main_nav > .nav_1 > a >img {width:20px; height:20px; }
+		nav > #main_nav > .nav_2 {width:900px; height:40px; background-color:#fff; float:left; padding:0 0px 0 160px; border-bottom:1px solid #ececec;}
+		nav #main_nav  .nav_2  ul > li {float:left; margin:12px 40px 0px 0px; font-size:15px; font-family:'OTWelcomeRA'; padding:3px 0 0 0;}
+		nav #main_nav  .nav_2  ul > li > a {text-decoration:none; color:#181818;}
+		nav #main_nav  .nav_2  ul > li > a:hover {color:#036baf;}
+
+		nav > #main_nav > .nav_3 {width:300px; height:40px; background-color:#fff; float:right; padding:1px 0 0 30px; border-right:1px solid #ececec; border-bottom:1px solid #ececec;}
+		nav  #main_nav  .nav_3 ul > li {float:left;; margin:10px 0 0 10px; font-size:14px; color:#4c4c4c;}
+		nav  #main_nav  .nav_3 ul > li > a {text-decoration:none; color:#4c4c4c;}
+		
+		@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+		/*------------푸터------------*/
+
+
+	footer {width:1260px; height:300px; background-color:#fff; margin: 0 auto; text-align:center;}
+		.bold {font-weight:bold;}
+		footer > .ft_nav {width:1260px; height:35px; background-color:#fff; float:left; margin:0 auto;}
+		footer > .ft_nav > ul {padding:0 0 0 0;}
+		footer > .ft_nav > ul > li {float:left; margin: 9px 10px; color:#434343; font-size:10px;}
+		footer > .ft_nav > ul > li > a {text-decoration:none; color:#434343; font-size:12px;}
+
+		footer > .ft_box1 {width:220px; height:265px; background-color:#fff; float:left; padding:15px 0 0 10px;}
+		footer > .ft_box1 > p {font-size:12px; color:#333333; padding:10px 0 0 0; text-align:left;}
+		footer > .ft_box1 > ul {text-align:left; padding:5px 0;}
+		footer > .ft_box1 > ul > li {font-weight:bold; color:#333333; font-size:19px; float:left; padding:3px 0;}
+		footer > .ft_box1 > ul > li > img {withe:16px; height:16px; padding: 2px 5px 0 0;}
+		footer > .ft_box1 > ul > li > span {font-size:11px; color:#333333; float:left; margin:0 50px 0 0;}
+		footer > .ft_box1 > table {font-size:12px; padding: 8px 0 0 0; color:#333333; float:left; background-color:#fff;}
+
+		footer > .ft_box2 {width:250px; height:265px; background-color:#fff; float:left; padding:15px 0 0 10px;}
+		footer > .ft_box2 > p {font-size:12px; color:#333333; padding:10px 0 0px 0; text-align:left;}
+		footer > .ft_box2 > table {font-size:12px; padding: 10px 0 10px 0; color:#333333; background-color:#fff;}
+		footer > .ft_box2 > table tr {background-color:#fff;}
+		footer > .ft_box2 > table th {padding:0 10px 0 0px; float:left; background-color:r#fff;}
+		footer > .ft_box2 > table td {float:left;}
+		footer > .ft_box2 > select {color:#333333; font-size:12px; padding: 3px; float:left;}
+
+
+		footer > .ft_box3 {width:580px; height:265px; background-color:#fff; float:left; padding:15px 0 0 10px; background-color:#fff;}
+		footer > .ft_box3 > .p1 {font-size:12px; color:#333333; padding:10px 200px 10px 0px; float:left; background-color:#fff;}
+		footer > .ft_box3 > table {float:left; background-color:#fff; font-size:12px; color:#333333;}
+		footer > .ft_box3 > table th {font-weight:bold; float:left;}
+		footer > .ft_box3 > table td {line-height:16px;}
+		footer > .ft_box3 > p {font-size:12px; color:#333333; padding:10px 300px 0px 0px; float:left; background-color:#fff;}
+		footer > .ft_box3 >.info {font-size:12px; color:#333333; text-align:left; background-color:#fff; width:570px; height:130px; display:inline-block; padding:0 0 0 0px; line-height:20px;}
+		footer > .ft_box3 > .info > span {font-weight:bold; background-color:#fff;}
+		footer > .ft_box3 > .info > button {border:2px solid #ececec; font-size:11px; margin:0 0 0 5px; padding:0 5px; cursor:pointer;}
+
+
+		footer > .ft_box4 {width:210px; height:265px; background-color:#fff; float:left; padding:25px 0 0 0;}
+
+		#footer_1 {width:100%; height:60px; background-color:#474747; text-align:center; margin:0 auto;}
+		#footer_1 > .footerbox {width:1260px; height:60px; margin:0 auto;}
+		
+		#footer_1 > .footerbox >p {color:#fff; font-size:13px;float:left; margin:23px 0px;}

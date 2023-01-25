@@ -1,0 +1,308 @@
+﻿@charset "utf-8";
+
+*{margin:0; box-sizing:border-box;}
+table, th, td {border-spacing:0;}
+
+.line1 {border-bottom:1px solid #e2e2e2;}
+.line2 {border-bottom:1px solid #e2e2e2; border-top:1px solid #ececec;}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#subname {width:1260px; height:50px; background-color:#fff; margin:0 auto;}
+	#subname > span {font-size:13px; float:right; margin:18px 15px 0 0; color:#4c4c4c;}
+	#subname > span > a {color:#4c4c4c;}
+	#subname > span > a:hover {opacity:0.6; transition: 0.3s;}
+	#subname > span > a > .icon_home {width:12px; hight:12px; margin:1px 10px 0 0;}
+	
+
+#sub {width:1260px; height:750px; background-color:yellow; margin:0 auto;}
+
+#subimg {width:630px; height:750px; background-color:#fff; float:left; margin:0 auto; position:relative; padding:0 10px 0 0;}
+	#subimg  #img {width: 630px; height:680px; position: relative; background-color: #fff;}
+	#subimg  #img  #img_list {width:630px; height: 70px; position: absolute; bottom: 15%; background-color: #fff; transition:0.3s;}
+	#subimg  #img  #img_list  img {width:96px; float: left; margin:2px;}
+	#subimg  #img  #img_list ul li:first-child {margin:0 0 0 130px;}
+	#subimg  #img  #img_list  img:hover {cursor: pointer; opacity:0.5;}
+	#subimg  #img  #img_detail img {height:500px; position:absolute; right:0;}
+
+#submenu {width:630px; height:750px; background-color:#fff; float:right; padding: 0 0 0 10px;}
+	#submenu > a {color:#181818;}
+	#submenu > a > .kakao:hover {background-color:#f3ce00;}
+	#submenu > table {border-top:3px solid #4c4c4c; margin:0 0 0 10px;}
+	#submenu table tr:nth-child(6) {background-color:#f7f7f7;}
+ 	#submenu table tr td {vertical-align: middle; font-size:12px; color:#333333; padding: 0 0 0 0px;}
+
+	#submenu table select {width:288px; height:30px; border:1px solid #e2e2e2; font-size:12px; color:#181818;}
+	#submenu table .t1 {font-size:20px; padding:10px 0px 10px 25px; color:#4c4c4c;}
+	#submenu table .t2 {font-size:18px; padding:10px 0px 10px 25px; color:#fd4543; margin:0 0 0 -24px; font-weight:bold;}
+
+	#submenu > a .kakao {font-color:#181818;}
+
+	#submenu table tr td {font-color:#333333;}
+	#submenu > .table2 {border:none;}
+	#submenu > .table2 tr:first-child {background-color:#f7f7f7;}
+	#submenu > .table2 tr td .weight {font-weight:bold;}
+	#submenu > .table2 tr td .size1 {font-size:20px; font-weight:bold;}
+	#submenu > .table2 tr td .tablebox {width:280px; height:55px; background-color:#fff; bottom:0; text-align:right; vertical-align: bottom; padding:30px 0 0 0;}
+
+
+
+
+	.bt1 {width:170px; height:52px; background-color:green; background-image:linear-gradient(#424242,#1b1b1b); border:none; color:#fff; font-size:14px;}
+	.bt1:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#1b1b1b,#424242);}
+	.bt2 {width:140px; height:52px; background-color:green; background-image:linear-gradient(#f1f1f1,#e6e6e6); border:1px solid #dadada; color:#181818; font-size:14px;}
+	.bt2:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#e6e6e6,#f1f1f1);}
+	.bt3 {width:140px; height:52px; background-color:green; background-image:linear-gradient(#f1f1f1,#e6e6e6); border:1px solid #dadada; color:#181818; font-size:14px;}
+	.bt3:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#e6e6e6,#f1f1f1);}
+	
+	.naver {width:285px; height:95px; border-top:3px solid #4c4c4c; float:right; margin:0 160px 5px 0; background-color:#fff; padding: 10px 0 0 5px; position:relative;}
+	.naver ul {display:inline-block;}
+	.naver ul li img {width:45px; height:13px; background-color:#fff;}
+	.naver ul li .nf1 {font-size:10px; font-weight:bold; background-color:#fff; float:left; letter-spacing:-1px; line-height:10px;}
+	.naver .btn2 {width:37px; height:37px; font-size:12px; float:right; border:1px solid #ececec; background-color:#fff; margin:0 0 0 3px; color:#00c73c; font-weight:bold; cursor:pointer;}
+	.naver .btn1 {width:151px; height:37px; font-size:12px; float:right; color:#fff; background-color:#00c73c; border:0px; cursor:pointer;}
+	.naver .btn1 .n {background-color:#fff; padding:2px 4px; font-weight:bold; margin:0 3px 0 0; color:#00c73c; font-weight:bold;}
+	.naver > p {float:left; font-size:13px; border-top:1px solid #4c4c4c; background-color:yellow;}
+
+	.nabox {width:285px; height:30px; background-color:#fff; bottom:0%; position:absolute; margin: 0 0 0 -5px; border-top:1px solid #ececec; }
+	.nabox  > p {font-size:13px; background-color:#fff; display:inline-block; margin: 5px 40px 0 5px;}
+	.nabox  > p > .mb {color:#00c73c;}
+	.nabox > .iconn {background-color:#fff; padding:0.5px 2.0px; font-size:10px; border:1px solid #ececec; right:0; margin: 1px; cursor:pointer;}
+
+	.kakao {width:450px; height:42px; background-color:#ffd800; float:right; margin:0 160px 0 0; text-align:center; line-height:40px; border:1px solid #debc00; font-color:#181818; font-size:14px;}
+	.kakao > span {font-weight:bold;}
+	.kakao > span > img {width:18px; vertical-align: middle; margin:0 5px 5px 0;}
+
+
+
+
+/*------------결제부분---------------*/
+
+#baner {width:1260px; height:200px; background-color:#fff; margin:0 auto; text-align:center;}
+
+#body_nav {width:1260px; height:42px; background-color:#fff; margin:0 auto; text-align:center; border-bottom:1px solid #181818;}
+	#body_nav ul {margin:0 220px 0 220px;}
+	#body_nav ul li {float:left; font-size:14px; background-color:#f7f7f7; width:160px; height:42px;
+	border-bottom:1px solid #181818; border-left:1px solid #dedede; border-right:1px solid #dedede; border-top:1px solid #dedede; padding:13px 0px;}
+	#body_nav ul li a {color:#a2a2a2;}
+	#body_nav ul .point {border-bottom:1px solid #fff; border-left:1px solid #181818; border-right:1px solid #181818; border-top:1px solid #181818; background-color:#fff;}
+	#body_nav ul .point a {color:#181818;}
+
+/*------------상품 상세페이지---------------*/
+
+
+
+#subbody {width:100%; height:17700px; background-color:#fff;}
+#sbody {width:1260px; height:17700px; background-color:#fff; margin:0 auto; text-align:center;}
+	
+	#sbody .title {font-family: 'yg-jalnan'; font-size:35px; background-color:#fff; display:inline-block; margin:150px 0 150px 0;}
+	.box {width:1000px; height:700px; background-color:yellow; margin: 0 130px;}
+
+	.font1 {font-size:38px; color:#4c4c4c; background-color:#fff; display:block; margin:150px 0 0 0; font-family: 'IBMPlexSansKR-Medium';}
+	.font2 {font-size:25px; color:#4c4c4c; background-color:#fff; margin:30px 0 0 0; line-height:50px; font-family: 'IBMPlexSansKR-Regular';}
+
+	.bigbox {width:1260px; height:310px; margin:100px 0 0 0;}
+	.bigbox .box2 {width:250px; height:310px; background-color:#fff; float:left;}
+	.bigbox .box2:first-child {margin: 0px 0 0 370px;}
+	.bigbox .box2 img:hover {transform: scale(1.06); transition: all 0.4s ease-in-out;}
+	.bigbox .box2 p {margin: 25px 0 0 0; font-size:17px; color:#4c4c4c; font-family: 'IBMPlexSansKR-Medium';}
+
+	#sbody .imgbox {width:1000px; height:900px; background-color:#fff; margin: 0 130px;}
+	#sbody .imgbox p {font-size:23px; color:#4c4c4c; font-family: 'IBMPlexSansKR-Regular'; background-color:#fff; padding: 125px 0px 40px 0;}
+	#sbody .imgbox2 {width:1000px; height:720px; background-color:#fff; margin: 100px 130px;}
+
+	#sbody .textbox {width:1000px; height:600px; margin: 20px 130px; background-color:#f8f7f1; text-align:center; padding: 30px 0 0 0;}
+	#sbody .textbox:hover {box-shadow:5px 5px 5px #d9d9d9; transition: 0.3s;}
+	#sbody .textbox .textbox2 {width:900px; height:350px; background-color:#f8f7f1; margin: 0px 50px; border-top:1px solid #dedede; border-bottom:1px solid #dedede; text-align:left;}
+	#sbody .textbox .textbox2 h2 {font-size:30px; margin:70px 0 20px 0px; color:#4c4c4c; ;}
+	#sbody .textbox .textbox2 span {font-size:20px; line-height:30px; font-family: 'IBMPlexSansKR-Medium'; color:#898989;}
+	#sbody .textbox .textbox2 img {float:right; margin:-220px 0 0 0px; width:400px; height:300px; }
+	#sbody .textbox .textbox2 img:hover {filter:drop-shadow(3px 3px 3px #d9d9d9); transition: 0.3s;}
+
+	#sbody .textbox .textbox3 {width:900px; height:150px; background-color:#f8f7f1; text-align:left; margin: 70px 50px;}
+	#sbody .textbox .textbox3 p {font-size:18px; line-height:30px; color:#727272; font-family: 'IBMPlexSansKR-Regular';}
+
+	
+	#sbody .imgbox3 {width:1000px; height:780px; background-color:#fff; margin: 0 130px;}
+	#sbody .imgbox4 {width:1000px; height:1100px; background-color:#fff; margin: 0 130px;}
+
+	
+	#sbody .textbox4 {width:1000px; height:1850px; background-color:#fff; margin: 0 130px; text-align:center; padding: 10px 0 0 0;}
+	#sbody .textbox4 h2 {font-size:30px; margin:70px 0 20px 0px; color:#4c4c4c; width:500px; margin: 10px 250px;}
+	#sbody .textbox4 p {font-size:20px; line-height:30px; font-family: 'IBMPlexSansKR-Medium'; color:#4c4c4c; border-top:1px solid #d5d5d5; width:350px; margin: 0 325px;}
+
+	#sbody .textbox4 ul {margin:100px 0px 0 0px;}
+	#sbody .textbox4 ul li {float:left; margin: 0 3px 10px 3px;}
+	#sbody .textbox4 ul li:hover {transform: scale(1.07); transition: all 0.3s ease-in-out; box-shadow:2px 3px 3px #bdbcbc;}
+	#sbody .textbox4 ul li img {border:1px solid #d5d5d5;}
+	#sbody .textbox4 ul li:first-child {margin: 0px 3px 0px 38px;}
+	#sbody .textbox4 ul li:nth-child(2) {margin: 0px 10px 0px 0px;}
+	#sbody .textbox4 ul li:nth-child(3) {margin: 0px 0px 0px 0px;}
+
+	#sbody > .textbox4 > .textalign {float:left; font-size:12px; margin: 30px; color:#898989;}
+
+	#sbody .detailbox {width:1000px; height:1500px; background-color:#f9f9f9; margin:0 auto; padding:0 100px;}
+	#sbody > .detailbox > h3 {font-size:30px; color:#4c4c4c; margin: 100px 0px; display:inline-block;}
+	#sbody .detailbox .imgbox5 {width:800px; height:560px; background-color:yellow; margin: 0 0 20px 0; border:1px solid #ececec;}
+	#sbody .detailbox .imgbox6 {width:390px; height:465px; background-color:pink; float:left; margin: 0 0px 0 0px; border:1px solid #ececec;}
+	#sbody .detailbox .imgbox7 {width:390px; height:465px; background-color:pink; float:left; margin: 0 0px 0 20px; border:1px solid #ececec;}
+	#sbody > .detailbox > p {float:left; text-align:left; font-size:18px; line-height:35px; color:#727272; font-family: 'IBMPlexSansKR-Regular'; margin: 30px 0 0 0;}
+	
+	#sbody .bigbox2 {width:1000px; height:4000px; background-color:#fff; margin:100px 130px;}
+	#sbody .bigbox2 > img {margin:50px 0px;}
+
+/*------------info---------------*/
+
+
+	#sbody .infobox {width:1000px; height:500px; background-color:#f8f7f2; margin:0px 130px 50px 130px; padding:50px 30px 0 140px; text-align:center;}
+	#sbody .infobox .pngbox {width:410px; height:300px; background-color:#f8f7f2; float:right; margin:-30px 0 0 0;}
+
+	#sbody .infobox > h3 {font-size:30px; color:#4c4c4c; margin: 0 0 90px -100px; display:block; background-color:#f8f7f2;text-align:center;}
+	#sbody .infobox > .pngbox > img {float:left; padding: -20px;}
+
+	#sbody .infobox > table {margin: 0 0 30px 0; font-color:#181818}
+	#sbody .infobox > table  tr  td {float:left;}
+	#sbody .infobox > p {float:left; color:#898989; font-size:13px; line-height:20px;}
+
+	
+	#sbody > .info_text {font-size:14px; font-weight:bold; color:#898989; line-height:20px; margin:0 0 150px 0;}
+
+	#sbody > .infobox2 {background-color:#f8f7f2; width:1000px; height:400px; margin:0 auto; text-align:center; padding:50px 50px;}
+	#sbody > .infobox2 > .inbox1 {width:450px; height:320px; border-right:1px solid #c3c3c3; float:left; text-align:left; padding:40px 25px 0 0px}
+	#sbody > .infobox2 > .inbox2 {width:450px; height:320px; float:left; text-align:left; padding:40px 5px 0 50px}
+
+	#sbody > .infobox2 h4 {font-size:20px; margin:0 0 13px 0; font-color:#181818}
+	#sbody > .infobox2 p {font-size:14px; line-height:20px; letter-spacing:-1px; font-color:#181818}
+	#sbody > .infobox2 .red {color:#fd4543;}	
+
+
+
+
+/*------------상품구매안내---------------*/
+#info {width:1260px; height:2630px; background-color:#fff; margin:0 auto;}
+
+
+	#info > #info_1 {width:1260px; height:1200px; background:pink; marigin:0 auto; text-align:center;} 
+	#info > #info_1 > .nav_1 {width:1260px; height:42px; background-color:#fff; text-align:center; border-bottom:1px solid #181818}
+	#info > #info_1 > .nav_1 ul {margin:0 220px 0 220px;}
+	#info > #info_1 > .nav_1 ul li {float:left; font-size:14px; background-color:#f7f7f7; width:160px; height:42px;
+	border-bottom:1px solid #181818; border-left:1px solid #dedede; border-right:1px solid #dedede; border-top:1px solid #dedede; padding:13px 0px;}
+	#info > #info_1 > .nav_1 ul li a {color:#a2a2a2;}
+	#info > #info_1 > .nav_1 ul .point {border-bottom:1px solid #fff; border-left:1px solid #181818; border-right:1px solid #181818; border-top:1px solid #181818; background-color:#fff;}
+	#info > #info_1 > .nav_1 ul .point a {color:#181818;}
+
+	#info > #info_1 > .infobox_1 {width:1260px; height:1200px; background-color:#fff; text-align:left;}
+	#info > #info_1 > .infobox_1 h3 {font-size:14px; border-bottom:1px solid #dedede; padding:0 0 10px 0; margin: 0 0 15px 0;}
+	#info > #info_1 > .infobox_1 .info_p {font-size:12px; font-color:#555555; margin: 15px 0 3px 15px; line-height:15px;}
+	#info > #info_1 > .infobox_1 p {font-size:12px; color:#333333; margin: 6px 0 3px 0; line-height:22px;}
+	#info > #info_1 > .infobox_1 p .info_red {color:#fd4543; font-weight:bold;}
+	#info > #info_1 > .infobox_1 .info_b {font-weight:bold;}
+	#info > #info_1  ul	 {margin: 15px 0 3px 10px;}
+	#info > #info_1  ul  li {font-size:12px; color:#555555; margin:0 0 2px 0;}
+	
+
+/*------------관련상품---------------*/
+
+	#info > #info_2 {width:1260px; height:420px; background:#fff; marigin:0 auto; text-align:center;}
+ 	#info > #info_2 > .nav_2 {width:1260px; height:42px; background-color:#fff; text-align:center; border-bottom:1px solid #181818}
+	#info > #info_2 > .nav_2 ul {margin:0 220px 0 220px;}
+	#info > #info_2 > .nav_2 ul li {float:left; font-size:14px; background-color:#f7f7f7; width:160px; height:42px;
+	border-bottom:1px solid #181818; border-left:1px solid #dedede; border-right:1px solid #dedede; border-top:1px solid #dedede; padding:13px 0px;}
+	#info > #info_2 > .nav_2 ul li a {color:#a2a2a2;}
+	#info > #info_2 > .nav_2 ul .point {border-bottom:1px solid #fff; border-left:1px solid #181818; border-right:1px solid #181818; border-top:1px solid #181818; background-color:#fff;}
+	#info > #info_2 > .nav_2 ul .point a {color:#181818;}
+	
+	#info > #info_2 > .infobox_2 {width:1260px; height:360px; background-color:#fff;text-align:center;}
+	#info > #info_2 > .infobox_2 > .imgbox {width:252px; height:350px; background-color:#fff; float:left; margin:20px 0 0 0; text-align:center;}
+	#info > #info_2 > .infobox_2 > .imgbox > a > img {width:240px; transition:0.3s;  margin: 0px 0 10px 0;}
+	#info > #info_2 > .infobox_2 > .imgbox > a > img:hover {border:2px solid #dedede;}
+	
+	#info > #info_2 > .infobox_2 > .imgbox .c a {color:#333333; font-size:12px;}
+	#info > #info_2 > .infobox_2 > .imgbox .b {margin:8px 0 0 0; font-size:12px; font-weight:bold;}
+
+
+/*------------상품후기---------------*/
+
+
+	#info > #info_3 {width:1260px; height:650px; background:#fff; marigin:0 auto; text-align:center;}
+ 	#info > #info_3 > .nav_3 {width:1260px; height:42px; background-color:#fff; text-align:center; border-bottom:1px solid #181818; margin:0 0 30px 0;}
+	#info > #info_3 > .nav_3 ul {margin:0 220px 0 220px;}
+	#info > #info_3 > .nav_3 ul li {float:left; font-size:14px; background-color:#f7f7f7; width:160px; height:42px;
+	border-bottom:1px solid #181818; border-left:1px solid #dedede; border-right:1px solid #dedede; border-top:1px solid #dedede; padding:13px 0px;}
+	#info > #info_3 > .nav_3 ul li a {color:#a2a2a2;}
+	#info > #info_3 > .nav_3 ul .point {border-bottom:1px solid #fff; border-left:1px solid #181818; border-right:1px solid #181818; border-top:1px solid #181818; background-color:#fff;}
+	#info > #info_3 > .nav_3 ul .point a {color:#181818;}
+
+	#info > #info_3 table {border:1px solid #dedede; margin:0 0 0 20px;}
+	#info > #info_3 table tr {height:40px; vertical-align:center; text-align:center;}
+	#info > #info_3 table tr:first-child td {border-bottom:1px solid #dedede; border-right:1px solid #dedede; background-color:#f6f6f6;}
+	#info > #info_3 table tr:not(:first-child) td {border-bottom:1px solid #dedede;}
+	#info > #info_3 table tr td {vertical-align:middle; color:#353535; font-size:12px;}
+	#info > #info_3 table tr td a {color:#353535;}
+	#info > #info_3 table .center {text-align:center !important; paddign:0 0 0 0px !important;}
+	#info > #info_3 table tr td:nth-child(2) {text-align:left; padding:0 0 0 10px;}
+	#info > #info_3 table tr td .star {color:#fd4543;}
+	
+
+	#info > #info_3 .bt4 {width:90px; height:32px; float:right; font-size:11px; text-align:center; padding:10px; background-color:green;
+	background-image:linear-gradient(#424242,#1b1b1b); border:none; margin:10px 2px 0 0;}
+	#info > #info_3 .bt4 a {color:#fff;}
+	#info > #info_3 .bt4:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#1b1b1b,#424242);}
+
+	#info > #info_3 .bt5 {width:90px; height:32px; float:right; font-size:11px; text-align:center; padding:10px; background-color:green;
+	background-image:linear-gradient(#f1f1f1,#e6e6e6); border:1px solid #dadada; margin:10px 18px 0 5px;}
+	#info > #info_3 .bt5 a {color:#181818;}
+	#info > #info_3 .bt5:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#e6e6e6,#f1f1f1);}
+
+	.pagebox {width:1260px; height:40px; background-color:#fff; margin: 60px 0 0 0; text-align:center; font-size:12px; color:#333333;}
+	.pagebox a {color:#333333;}
+
+
+
+/*------------상품문의---------------*/
+
+	#info > #info_4 {width:1260px; height:350px; background:#fff; marigin:0 auto; text-align:center; flex-direction:row;}
+ 	#info > #info_4 > .nav_4 {width:1260px; height:42px; background-color:#fff; text-align:center; border-bottom:1px solid #181818}
+	#info > #info_4 > .nav_4 ul {margin:0 220px 0 220px;}
+	#info > #info_4 > .nav_4 ul li {float:left; font-size:14px; background-color:#f7f7f7; width:160px; height:42px;
+	border-bottom:1px solid #181818; border-left:1px solid #dedede; border-right:1px solid #dedede; border-top:1px solid #dedede; padding:13px 0px;}
+	#info > #info_4 > .nav_4 ul li a {color:#a2a2a2;}
+	#info > #info_4 > .nav_4 ul .point {border-bottom:1px solid #fff; border-left:1px solid #181818; border-right:1px solid #181818; border-top:1px solid #181818; background-color:#fff;}
+	#info > #info_4 > .nav_4 ul .point a {color:#181818;}
+
+
+	#info > #info_4 > .info_4box {width:1260px; height:130px; background-color:#fff; border-bottom:1px solid #dedede;}
+	#info > #info_4 > .info_4box > p {font-size:12px; font-weight:bold; margin:90px 0 0 0px;} 
+
+	
+	#info > #info_4 .bt6 {width:90px; height:32px; float:right; font-size:11px; text-align:center; padding:10px; background-color:green;
+	background-image:linear-gradient(#424242,#1b1b1b); border:none; margin:10px 0px 10px 0px;}
+	#info > #info_4 .bt6 a {color:#fff;}
+	#info > #info_4 .bt6:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#1b1b1b,#424242);}
+
+	#info > #info_4 .bt7 {width:90px; height:32px; float:right; font-size:11px; text-align:center; padding:10px; background-color:green;
+	background-image:linear-gradient(#f1f1f1,#e6e6e6); border:1px solid #dadada; margin: 10px 0 0 8px;}
+	#info > #info_4 .bt7 a {color:#181818;}
+	#info > #info_4 .bt7:hover {cursor:pointer; background-color:green; background-image:linear-gradient(#e6e6e6,#f1f1f1);}
+
+
+

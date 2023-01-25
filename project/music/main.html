@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/qof5jlc.css">
+	<title></title>
+
+	<script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$(".icon-menu").click(function(){
+				$(".slidebox").slideToggle();
+			});
+
+			$(".fas").click(function(){
+				$(".slidebox").slideToggle();
+			});
+		});
+	</script>
+	<script>
+		$(function(){
+			$(".svgbox").click(function(){
+				$(".video_play").show();
+				$(".videobox img").block();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+			$(".clickbox1").click(function(){
+
+				$(".navul_1").slideToggle();
+
+				$(".navul_2, .navul_3, .navul_4").hide();
+
+				var $row1 = $(".clickbox1").closest(".row1");
+				var $img = $row1.find(" > .column2 > div > img.navimg2")
+
+				$img.css("display", "block");
+				$img.siblings().css("display", "none");
+
+			});
+		});
+		$(document).ready(function(){
+
+			$(".clickbox2").click(function(){
+
+				$(".navul_2").slideToggle();
+
+				$(".navul_3, .navul_4, .navul_1").hide();
+
+				var $row1 = $(".clickbox1").closest(".row1");
+				var $img = $row1.find(" > .column2 > div > img.navimg3")
+
+				$img.css("display", "block");
+				$img.siblings().css("display", "none");
+				
+			});
+		});
+		$(document).ready(function(){
+
+			$(".clickbox3").click(function(){
+
+				$(".navul_3").slideToggle();
+
+				$(".navul_1, .navul_2, .navul_4").hide();
+				var $row1 = $(".clickbox1").closest(".row1");
+				var $img = $row1.find(" > .column2 > div > img.navimg4")
+
+				$img.css("display", "block");
+				$img.siblings().css("display", "none");
+			});
+		});
+		$(document).ready(function(){
+			$(".clickbox4").click(function(){
+				$(".navul_1, .navul_2, .navul_4, .navul_3").hide();
+
+				var $row1 = $(".clickbox4").closest(".row1");
+				var $img = $row1.find(" > .column2 > div > img.navimg5")
+
+				$img.css("display", "block");
+				$img.siblings().css("display", "none");
+			});	
+		});
+		$(document).ready(function(){
+
+			$(".clickbox5").click(function(){
+
+				$(".navul_4").slideToggle();
+
+				$(".navul_1, .navul_2, .navul_3").hide();
+				var $row1 = $(".clickbox1").closest(".row1");
+				var $img = $row1.find(" > .column2 > div > img.navimg6")
+
+				$img.css("display", "block");
+				$img.siblings().css("display", "none");
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+
+			$(".column1 > ul > li").click(function(){
+
+				var $this = $(this).click();
+				var $index = $this.index();
+				var $row1 = $("row1");
+				var $img = $row1.find("> .column2 > div > img");
+				var $post;
+
+				if ($index = $img.index()) {
+					$img.css("display", "block")
+				} else {
+					$img.css("display", "none")
+				}
+				$(".clickbox5").text($this.index());
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+
+			<!-------------------------------------nav(none)---------------------------------------------------------------------------------->
+			<div class="slidebox">
+				<nav>
+					<div class="navbox">
+						<div class="logobox">
+								<img src="img/logo-simple.png" class="logo2">
+						</div>
+						<div class="navbox2">
+							<ul>
+								<li><a href="#">
+									<svg class="icon-sound" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.34 59.53">
+										<g>									
+											<path stroke="currentColor" class="cls-1" d="M1.67,18.89A13.94,13.94,0,0,1,6.75,29.65,13.92,13.92,0,0,1,1.67,40.41" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="24.58820152282715"></path>
+											<path stroke="currentColor" class="cls-1" d="M15.27,10.16A26,26,0,0,1,24,29.53a26,26,0,0,1-8.91,19.52" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="44.00544738769531"></path>
+											<path stroke="currentColor" class="cls-1" d="M28.8,1.47A38.49,38.49,0,0,1,41.2,29.81,38.52,38.52,0,0,1,29,58" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="63.428802490234375"></path>
+										</g>
+									</svg>		
+								</a></li>
+								<li><a href="#" class="font">EN</a></li>
+								<li><a href="#">
+									<svg class="icon-seach" xmlns="http://www.w3.org/2000/svg" width="61" height="62" viewBox="0 0 61 62">
+     									<g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="6" transform="translate(2 2)">
+       										<path d="M43.1000046,22.38 C43.104045,31.0728025 37.8707401,38.9119049 29.8407984,42.2412996 C21.8108568,45.5706943 12.5659849,43.7345703 6.41781437,37.5892607 C0.26964379,31.443951 -1.57078297,22.1999348 1.75487393,14.1684444 C5.08053084,6.13695401 12.9171965,0.9 21.61,0.9 C33.4746951,0.9 43.094479,10.5153062 43.1000046,22.38 Z" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="135.03297424316406"></path>
+        									<path d="M36.46,37.9 L57,58.43" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="29.040874481201172"></path>
+      									</g>
+  									</svg>
+								</a></li>
+								<li><a href="#">
+									<i class="fas fa-times"></i>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>	
+				<div class="row1">
+					<div class="column1">
+						<ul>
+							<li><a href="#" class="h2 clickbox1">STUDY</a>
+								<ul class="navul_1">
+									<li><a href="#">Course finder</a></li>
+									<li><a href="#">Departments</a></li>
+									<li><a href="#">About our courses</a></li>
+									<li><a href="#">Open Day Home</a></li>
+									<li><a href="#">How to apply</a></li>
+									<li><a href="#">Audition</a></li>
+									<li><a href="#">Fees, scholarships and bursaries</a></li>
+									<li><a href="#">Why study at the Academy?</a></li>
+									<li><a href="#">Exchanges</a></li>
+									<li><a href="#">Artist Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="h2 clickbox2">STUDENT LIFE</a>
+								<ul class="navul_2">
+									<li><a href="#">Students' Union</a></li>
+									<li><a href="#">Living in London</a></li>
+									<li><a href="#">Accommodation</a></li>
+									<li><a href="#">Visas and immigration</a></li>
+									<li><a href="#">Wellbeing and support</a></li>
+									<li><a href="#">Diversity, Equity, Inclusion and Belonging</a></li>
+									<li><a href="#">Term dates</a></li>
+									<li><a href="#">International students</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="h2 clickbox3">WHAT'S ON</a>
+								<ul class="navul_3">
+									<li><a href="#">Travelling to the Academy</a></li>
+									<li><a href="#">Access to the Academy</a></li>
+									<li><a href="#">Attending events</a></li>
+									<li><a href="#">Sign up to our mailing list</a></li>
+									<li><a href="#">All events</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="h2 clickbox4">RECORDINGS</a>
+							</li>
+							<li><a href="#" class="h2 clickbox5">ALUMNI</a>
+								<ul class="navul_4">
+									<li><a href="#">Meet our alumni</a></li>
+									<li><a href="#">Alumni benefits</a></li>
+									<li><a href="#">Get involved</a></li>
+									<li><a href="#">Alumni Portal</a></li>									
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="column2">
+						<div class="imgbox imgscript">
+							<img src="img/nav/Study-Student-practising-cello.jpg" class="navimg1">
+							<img src="img/nav/course-finder.jpg" class="navimg2">
+							<img src="img/nav/L1030905.jpg" class="navimg3">
+							<img src="img/nav/Whats-On.jpg" class="navimg4">
+							<img src="img/Screen-Shot.png" class="navimg5">
+							<img src="img/nav/Evelyn-Glennie-c-Philipp-Rathmer.jpg" class="navimg6">
+						</div>
+					</div>
+				</div>
+				<div class="row2">
+					<div class="column1">
+						<ul>
+							<li><a href="#">SUPPORT THE ACADEMY</a></li>
+							<li><a href="#">ABOUT US</a></li>
+							<li><a href="#">MUSEUM</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">PEOPLE</a></li>
+						</ul>
+					</div>
+					<div class="column2">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+							<li><a href="#"><i class="fab fa-weixin"></i></a></li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+			<!-------------------------------------nav(none)---------------------------------------------------------------------------------->
+
+			<div id="headerbox">
+				<nav>
+					<div class="navbox">
+						<div class="logobox">
+								<img src="img/logo.png" class="logo">
+								<img src="img/logo-simple.png" class="logo2">
+						</div>
+						<div class="navbox2">
+							<ul>
+								<li><a href="#">
+									<svg class="icon-sound" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.34 59.53">
+										<g>									
+											<path stroke="currentColor" class="cls-1" d="M1.67,18.89A13.94,13.94,0,0,1,6.75,29.65,13.92,13.92,0,0,1,1.67,40.41" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="24.58820152282715"></path>
+											<path stroke="currentColor" class="cls-1" d="M15.27,10.16A26,26,0,0,1,24,29.53a26,26,0,0,1-8.91,19.52" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="44.00544738769531"></path>
+											<path stroke="currentColor" class="cls-1" d="M28.8,1.47A38.49,38.49,0,0,1,41.2,29.81,38.52,38.52,0,0,1,29,58" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="63.428802490234375"></path>
+										</g>
+									</svg>		
+								</a></li>
+								<li><a href="#" class="font">EN</a></li>
+								<li><a href="#">
+									<svg class="icon-seach" xmlns="http://www.w3.org/2000/svg" width="61" height="62" viewBox="0 0 61 62">
+     									<g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="6" transform="translate(2 2)">
+       										<path d="M43.1000046,22.38 C43.104045,31.0728025 37.8707401,38.9119049 29.8407984,42.2412996 C21.8108568,45.5706943 12.5659849,43.7345703 6.41781437,37.5892607 C0.26964379,31.443951 -1.57078297,22.1999348 1.75487393,14.1684444 C5.08053084,6.13695401 12.9171965,0.9 21.61,0.9 C33.4746951,0.9 43.094479,10.5153062 43.1000046,22.38 Z" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="135.03297424316406"></path>
+        									<path d="M36.46,37.9 L57,58.43" style="opacity: 1; stroke-dashoffset: 0px;" stroke-dasharray="29.040874481201172"></path>
+      									</g>
+  									</svg>
+								</a></li>
+								<li><a href="#">
+									<svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="510pt" height="510pt" viewBox="0 0 510 510">
+										<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"fill="#fff" stroke="none">
+											<path d="M820 3785 l0 -205 1843 2 1842 3 3 203 2 202 -1845 0 -1845 0 0 -205z"/></path>
+											<path d="M820 2560 l0 -200 1845 0 1845 0 0 200 0 200 -1845 0 -1845 0 0 -200z"/></path>
+											<path d="M820 1335 l0 -205 1845 0 1845 0 -2 203 -3 202 -1842 3 -1843 2 0-205z"/></path>
+										</g>
+									</svg>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div id="slider">
+			<video src="img/main.mp4"loop muted autoplay></video>
+		</div>
+		<dis id="container">
+			<article>
+				<div class="aling-box1">
+					<div class="rowbox">
+						<svg viewBox="0 0 184 151" preserveAspectRatio="none" class="line">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M183.5,0.5 C98.373,0.5 29.489,35.596 0.5,150.5" stroke-dasharray="259.3519287109375" style="stroke-dashoffset: 0px;"></path>
+                        </svg>
+						<h2>MUSIC MUST ALWAYS MOVE FORWARD</h2>
+					</div>
+					<div class="textbox">
+						<p>There has to be a place for new musicians to connect, collaborate and create. We are that place. A risk-taking conservatoire where the traditions of the past meet the talent of the future.</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box2">
+					<div class="box2">
+						<div class="font">
+							<h2 class="h2_writing">DEPARTMENTS</h2>
+						</div>
+						<div class="box3">
+							<div class="imgcontainer">
+								<img src="img/slide/01.jpg">
+								<img src="img/slide/02.jpg">
+								<img src="img/slide/03.jpg">
+								<img src="img/slide/04.jpg">
+							</div>
+							<div class="textbox">
+								<ul>
+									<li><a href="#">Academic Studies</a></li>
+									<li><a href="#">Accordion</a></li>
+									<li><a href="#">Brass</a></li>
+									<li><a href="#">Choral Conducting</a></li>
+									<li><a href="#">Composition & Contemporary Music</a></li>
+									<li><a href="#">Conducting</a></li>
+									<li><a href="#">Guitar</a></li>
+									<li><a href="#">Harp</a></li>
+									<li><a href="#">Historical Performance</a></li>
+									<li><a href="#">Jazz</a></li>
+									<li><a href="#">Junior Academy</a></li>
+									<li><a href="#">Musical Theatre</a></li>
+									<li><a href="#">Open Academy</a></li>
+									<li><a href="#">Opera</a></li>
+									<li><a href="#">Organ</a></li>
+									<li><a href="#">Piano</a></li>
+									<li><a href="#">Piano Accompaniment</a></li>
+									<li><a href="#">Research</a></li>
+									<li><a href="#">Strings</a></li>
+									<li><a href="#">Timpani & Percussion</a></li>
+									<li><a href="#">Vocal Studies</a></li>
+									<li><a href="#">Woodwind</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="box4">
+						<img src="img/Student_Playing_Cello.jpg">
+					</div>					
+				</div>
+			</article>
+			<article>
+				<div class="aling-box3">
+					<div class="imgbox">
+						<img src="img/Students-in-Rehearsa.jpg">
+					</div>
+					<div class="textbox">
+						<h2>OPEN DAYS</h2>
+						<p>Open Days are the perfect way to discover more about the Academy and whether it’s the right place for you.</p>
+							
+						<p>Catch up on our departmental webinars from 2021 and find out practical information about the application process, finances and career development.
+						</p>
+						<div class="button">
+							<a href="#">READ MORE</a>
+							<svg viewBox="0 0 18 18">
+								<polygon fill-rule="evenodd" fill="currentcolor" stroke="currentcolor" stroke-width=".5" points="0 .682 6.635 3.999 0 7.317 0 8 8 3.999 0 0" transform="translate(5 5)"></polygon>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box4">
+					<div class="textbox">
+						<h2>AUTUMN<br>CONCERTS</h2>
+						<p>We welcome audiences back for in-person concerts throughout November and December.</p>
+						<a href="#">NOVEMBER AND DECEMBER PUBLIC EVENTS</a>
+					</div>
+					<div class="imgbox">
+						<img src="img/Decorative-Lights.jpg">
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box5">
+					<div class="fontbox">
+						<h2>STUDENT LIFE</h2>
+					</div>
+					<div class="mainbox">
+						<div class="textbox">
+							<div class="row1">
+								<p>When you come to the Academy, you will form lifelong friendships with people from around the world.
+									Coming to the academy is where you build lifelong friendships with people from all over the world.
+								</p>
+								<div class="button">
+									<a href="#">EXPLORE STUDENT LIFE </a>
+									<svg class="chevron-link__arrow-svg" viewBox="0 0 18 18">
+                                   		 <polygon fill-rule="evenodd" stroke="currentcolor" fill="currentcolor" stroke-width=".5" points="0 .682 6.635 3.999 0 7.317 0 8 8 3.999 0 0" transform="translate(5 5)"></polygon>
+                                	</svg>
+                                </div>
+							</div>
+							<div class="row2">
+								<ul>
+									<li><a href="#">LIVING IN LONDON</a></li>
+									<li><a href="#">WELLBEING AND SUPPORT</a></li>
+									<li><a href="#">TERM DATES</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="imgbox">
+							<img src="img/Student-Entering-the-Academy.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="blackbox"></div>
+			</article>
+			<article>
+				<div class="aling-box6">
+					<div class="videobox">
+						<div class="svgbox">
+							<svg class="video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    			<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+									fill="#fff" stroke="none">
+									<path d="M2330 5110 c-494 -48 -950 -230 -1350 -538 -195 -150 -448 -432 -594
+									-662 -63 -99 -186 -351 -230 -471 -49 -134 -102 -340 -128 -499 -31 -195 -31
+									-565 0 -760 45 -276 116 -498 237 -745 132 -269 269 -460 489 -681 221 -220
+									412 -357 681 -489 247 -121 469 -192 745 -237 195 -31 565 -31 760 0 276 45
+									498 116 745 237 269 132 460 269 681 489 220 221 357 412 489 681 88 179 132
+									296 180 476 63 240 78 371 78 649 0 278 -15 409 -78 649 -48 180 -92 297 -180
+									476 -132 269 -269 460 -489 681 -221 220 -412 357 -681 489 -246 121 -474 193
+									-740 235 -147 23 -475 34 -615 20z m550 -226 c339 -49 662 -168 950 -352 253
+									-161 541 -449 702 -702 144 -226 262 -507 317 -757 41 -185 53 -302 53 -513 0
+									-275 -29 -467 -108 -713 -120 -371 -300 -663 -579 -942 -279 -279 -571 -459
+									-942 -579 -246 -79 -438 -108 -713 -108 -275 0 -467 29 -713 108 -371 120
+									-663 300 -942 579 -374 373 -589 803 -670 1340 -23 151 -23 479 0 630 54 355
+									169 667 353 955 161 253 449 541 702 702 475 303 1045 429 1590 352z"/>
+									<path d="M1983 3616 c-66 -30 -63 28 -63 -1058 0 -952 1 -984 19 -1014 28 -47
+									78 -61 130 -37 78 35 1529 976 1542 1000 16 29 16 77 0 106 -10 18 -1218 806
+									-1496 976 -64 38 -92 44 -132 27z m751 -676 c322 -206 585 -377 585 -380 0 -5
+									-1162 -752 -1179 -758 -6 -2 -10 280 -10 758 0 478 4 760 10 758 5 -1 272
+									-172 594 -378z"/>
+								</g>
+              			 	</svg>
+              			 </div>
+						<img src="img/Ceiling-of-the-Angela-Burgess-Recital-Hal.jpg">
+						<div class="video_play">
+							<video src="img/Oliver Knussen at the Royal Academy of Music.mp4" loop muted autoplay>
+						</video>
+					</div>
+					</div>
+					<div class="textbox">
+						<h2 class="h2_200">PRINCIPAL JONATHAN FREEMAN-ATTWOOD CBE<br>WELCOMES ALL STUDENTS TO THEACADEMY FOR THE<br>2021/22 ACADEMIC YEAR</h2>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box7">
+					<div class="imgbox">
+						<img src="img/Student-Playing-Cello.jpg">
+					</div>
+					<div class="textbox">
+						<h2>PROSPECTUS 2022/23</h2>
+						<p>Discover all you need to know about our community and how you can become a part of it.</p>
+						<div class="button">
+							<a href="#">DOWNLOAD THE PROSPECTUS</a>
+							<svg viewBox="0 0 18 18">
+								<polygon fill-rule="evenodd" fill="currentcolor" stroke="currentcolor" stroke-width=".5" points="0 .682 6.635 3.999 0 7.317 0 8 8 3.999 0 0" transform="translate(5 5)"></polygon>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box8">
+					<div class="textbox">
+						<h2>COVID-19 GUIDANCE</h2>
+						<p>Latest information and news from the Academy.</p>
+						<div class="button">
+							<a href="#">READ MORE</a>
+							<svg viewBox="0 0 18 18">
+								<polygon fill-rule="evenodd" fill="currentcolor" stroke="currentcolor" stroke-width=".5" points="0 .682 6.635 3.999 0 7.317 0 8 8 3.999 0 0" transform="translate(5 5)"></polygon>
+							</svg>
+						</div>
+					</div>
+					<div class="imgbox">
+						<img src="img/Angela-Burgess-Recital-Hall-Ceiling.jpg">
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box9">
+					<div class="imgbox_9">
+						<div class="hoverbox">
+							<img src="img/Angela-Burgess-Recital-Hall.jpg">
+							<div class="hovertextbox">
+								<div class="row1"><p>360°</p></div>
+								<svg viewBox="0 0 101 26">
+                                      <path fill="none" stroke="#FFF" stroke-width="1.5" d="M0.40580797,0.552 C0.42984915,0.6115639 2.93734416,6.5872089 10.3402243,12.4322946 C22.7388616,22.2230387 39.1000863,24.1332957 50.6614895,24.028006 C62.6556339,23.9100814 79.2825136,21.7549505 90.3775179,12.1603462 C96.9846351,6.4476248 98.5136541,0.7096338 98.5280788,0.6518749" transform="translate(1)" stroke-dasharray="114.93428039550781" style="stroke-dashoffset: 0px;"></path>
+                                </svg>
+                                <div class="row2"><p>Tap to begin</p></div>
+							</div>
+						</div>
+						<h3>Angela Burgess Recital Hall</h3>
+					</div>
+
+					<div class="imgbox_9">
+						<div class="hoverbox">
+							<img src="img/Susie-Sainsbury-Theatre.jpg">
+							<div class="hovertextbox">
+								<div class="row1"><p>360°</p></div>
+								<svg viewBox="0 0 101 26">
+                                      <path fill="none" stroke="#FFF" stroke-width="1.5" d="M0.40580797,0.552 C0.42984915,0.6115639 2.93734416,6.5872089 10.3402243,12.4322946 C22.7388616,22.2230387 39.1000863,24.1332957 50.6614895,24.028006 C62.6556339,23.9100814 79.2825136,21.7549505 90.3775179,12.1603462 C96.9846351,6.4476248 98.5136541,0.7096338 98.5280788,0.6518749" transform="translate(1)" stroke-dasharray="114.93428039550781" style="stroke-dashoffset: 0px;"></path>
+                                </svg>
+                                <div class="row2"><p>Tap to begin</p></div>
+							</div>
+						</div>							
+						<h3>The Susie Sainsbury Theatre</h3>
+					</div>
+
+					<div class="imgbox_9">
+						<div class="hoverbox">						
+							<img src="img/Dukes-Hall.jpg">
+							<div class="hovertextbox">
+								<div class="row1"><p>360°</p></div>
+								<svg viewBox="0 0 101 26">
+                                      <path fill="none" stroke="#FFF" stroke-width="1.5" d="M0.40580797,0.552 C0.42984915,0.6115639 2.93734416,6.5872089 10.3402243,12.4322946 C22.7388616,22.2230387 39.1000863,24.1332957 50.6614895,24.028006 C62.6556339,23.9100814 79.2825136,21.7549505 90.3775179,12.1603462 C96.9846351,6.4476248 98.5136541,0.7096338 98.5280788,0.6518749" transform="translate(1)" stroke-dasharray="114.93428039550781" style="stroke-dashoffset: 0px;"></path>
+                                </svg>
+                                <div class="row2"><p>Tap to begin</p></div>
+							</div>
+						</div>								
+						<h3>Duke's Hall</h3>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box10">
+					<div class="textbox">
+						<h2>OUR SOUND</h2>
+						<div class="pbox">
+							<p>Be inspired by the latest music from<br>Academy students and staff.</p>
+						</div>
+						<div class="buttonbox">
+							<ul>
+								<li>
+									<svg class="arrow" viewBox="0 0 17 14">
+                                       <polygon fill="currentcolor" fill-rule="evenodd" stroke="currentcolor" stroke-width=".5" points="1 1.682 7.635 4.999 1 8.317 1 9 9 4.999 1 1" transform="translate(3.108 2)"></polygon>	
+									</svg>
+									<a href="#">RECORDINGS</a>
+								</li>
+								<li>
+									<svg class="chevron" viewBox="0 0 17 14">
+                                      <polygon fill="currentcolor" fill-rule="evenodd" stroke="currentcolor" stroke-width=".5" points="10.809 0 10.809 .547 11.789 1.176 8.153 1.176 6.217 4.983 4.289 1.176 0 1.176 0 1.636 4.006 1.636 5.959 5.492 4.006 9.331 0 9.331 0 9.791 4.289 9.791 6.216 6.001 8.153 9.824 11.789 9.824 10.809 10.453 10.809 11 13 9.594 10.809 8.188 10.809 8.735 11.789 9.364 8.436 9.364 6.475 5.492 8.436 1.636 11.789 1.636 10.809 2.265 10.809 2.812 13 1.406" transform="translate(2 2)"></polygon>
+                                   	</svg>
+									<a href="#">RANDOMISE</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bigbox">
+						<div class="imgbox">
+							<div class="hoverbox">
+								<img src="img/brid.jpg">
+								<div class="hovertextbox">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    					<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+											fill="#fff" stroke="none">
+											<path d="M2330 5110 c-494 -48 -950 -230 -1350 -538 -195 -150 -448 -432 -594
+										-662 -63 -99 -186 -351 -230 -471 -49 -134 -102 -340 -128 -499 -31 -195 -31
+										-565 0 -760 45 -276 116 -498 237 -745 132 -269 269 -460 489 -681 221 -220
+										412 -357 681 -489 247 -121 469 -192 745 -237 195 -31 565 -31 760 0 276 45
+										498 116 745 237 269 132 460 269 681 489 220 221 357 412 489 681 88 179 132
+										296 180 476 63 240 78 371 78 649 0 278 -15 409 -78 649 -48 180 -92 297 -180
+										476 -132 269 -269 460 -489 681 -221 220 -412 357 -681 489 -246 121 -474 193
+										-740 235 -147 23 -475 34 -615 20z m550 -226 c339 -49 662 -168 950 -352 253
+										-161 541 -449 702 -702 144 -226 262 -507 317 -757 41 -185 53 -302 53 -513 0
+										-275 -29 -467 -108 -713 -120 -371 -300 -663 -579 -942 -279 -279 -571 -459
+										-942 -579 -246 -79 -438 -108 -713 -108 -275 0 -467 29 -713 108 -371 120
+										-663 300 -942 579 -374 373 -589 803 -670 1340 -23 151 -23 479 0 630 54 355
+										169 667 353 955 161 253 449 541 702 702 475 303 1045 429 1590 352z"/>
+										<path d="M1983 3616 c-66 -30 -63 28 -63 -1058 0 -952 1 -984 19 -1014 28 -47
+										78 -61 130 -37 78 35 1529 976 1542 1000 16 29 16 77 0 106 -10 18 -1218 806
+										-1496 976 -64 38 -92 44 -132 27z m751 -676 c322 -206 585 -377 585 -380 0 -5
+										-1162 -752 -1179 -758 -6 -2 -10 280 -10 758 0 478 4 760 10 758 5 -1 272
+										-172 594 -378z"/>
+										</g>
+              			 			</svg>
+              			 		</div>						
+								<h3>Brindley Sherratt masterclass</h3>
+							</div>
+						</div>
+						<div class="imgbox2">
+							<div class="hoverbox">
+								<img src="img/Screen-Shot.png">
+								<div class="hovertextbox">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    					<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+											fill="#fff" stroke="none">
+											<path d="M2330 5110 c-494 -48 -950 -230 -1350 -538 -195 -150 -448 -432 -594
+										-662 -63 -99 -186 -351 -230 -471 -49 -134 -102 -340 -128 -499 -31 -195 -31
+										-565 0 -760 45 -276 116 -498 237 -745 132 -269 269 -460 489 -681 221 -220
+										412 -357 681 -489 247 -121 469 -192 745 -237 195 -31 565 -31 760 0 276 45
+										498 116 745 237 269 132 460 269 681 489 220 221 357 412 489 681 88 179 132
+										296 180 476 63 240 78 371 78 649 0 278 -15 409 -78 649 -48 180 -92 297 -180
+										476 -132 269 -269 460 -489 681 -221 220 -412 357 -681 489 -246 121 -474 193
+										-740 235 -147 23 -475 34 -615 20z m550 -226 c339 -49 662 -168 950 -352 253
+										-161 541 -449 702 -702 144 -226 262 -507 317 -757 41 -185 53 -302 53 -513 0
+										-275 -29 -467 -108 -713 -120 -371 -300 -663 -579 -942 -279 -279 -571 -459
+										-942 -579 -246 -79 -438 -108 -713 -108 -275 0 -467 29 -713 108 -371 120
+										-663 300 -942 579 -374 373 -589 803 -670 1340 -23 151 -23 479 0 630 54 355
+										169 667 353 955 161 253 449 541 702 702 475 303 1045 429 1590 352z"/>
+										<path d="M1983 3616 c-66 -30 -63 28 -63 -1058 0 -952 1 -984 19 -1014 28 -47
+										78 -61 130 -37 78 35 1529 976 1542 1000 16 29 16 77 0 106 -10 18 -1218 806
+										-1496 976 -64 38 -92 44 -132 27z m751 -676 c322 -206 585 -377 585 -380 0 -5
+										-1162 -752 -1179 -758 -6 -2 -10 280 -10 758 0 478 4 760 10 758 5 -1 272
+										-172 594 -378z"/>
+										</g>
+              			 			</svg>
+								</div>
+								<h3>SEMELE<span>Royal Academy Opera</span></h3>
+							</div>							
+						</div>
+						<div class="imgbox">
+							<div class="hoverbox">
+								<img src="img/COMM-VISU.jpg">
+								<div class="hovertextbox">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    					<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+											fill="#fff" stroke="none">
+											<path d="M2330 5110 c-494 -48 -950 -230 -1350 -538 -195 -150 -448 -432 -594
+										-662 -63 -99 -186 -351 -230 -471 -49 -134 -102 -340 -128 -499 -31 -195 -31
+										-565 0 -760 45 -276 116 -498 237 -745 132 -269 269 -460 489 -681 221 -220
+										412 -357 681 -489 247 -121 469 -192 745 -237 195 -31 565 -31 760 0 276 45
+										498 116 745 237 269 132 460 269 681 489 220 221 357 412 489 681 88 179 132
+										296 180 476 63 240 78 371 78 649 0 278 -15 409 -78 649 -48 180 -92 297 -180
+										476 -132 269 -269 460 -489 681 -221 220 -412 357 -681 489 -246 121 -474 193
+										-740 235 -147 23 -475 34 -615 20z m550 -226 c339 -49 662 -168 950 -352 253
+										-161 541 -449 702 -702 144 -226 262 -507 317 -757 41 -185 53 -302 53 -513 0
+										-275 -29 -467 -108 -713 -120 -371 -300 -663 -579 -942 -279 -279 -571 -459
+										-942 -579 -246 -79 -438 -108 -713 -108 -275 0 -467 29 -713 108 -371 120
+										-663 300 -942 579 -374 373 -589 803 -670 1340 -23 151 -23 479 0 630 54 355
+										169 667 353 955 161 253 449 541 702 702 475 303 1045 429 1590 352z"/>
+										<path d="M1983 3616 c-66 -30 -63 28 -63 -1058 0 -952 1 -984 19 -1014 28 -47
+										78 -61 130 -37 78 35 1529 976 1542 1000 16 29 16 77 0 106 -10 18 -1218 806
+										-1496 976 -64 38 -92 44 -132 27z m751 -676 c322 -206 585 -377 585 -380 0 -5
+										-1162 -752 -1179 -758 -6 -2 -10 280 -10 758 0 478 4 760 10 758 5 -1 272
+										-172 594 -378z"/>
+										</g>
+              			 			</svg>
+								</div>
+								<h3>Academy Opera Scenes</h3>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box11">
+					<div class="rowbox1">
+						<div class="imgbox1">
+							<img src="img/slide2/Eleanor-Alberga.jpg">
+						</div>
+						<div class="imgbox2">
+							<img src="img/slide2/Susanna-Malkki.jpg">
+						</div>
+					</div>
+					<div class="rowbox2">
+						<h2>FOLLOW</h2>
+						<div class="imgbox">
+							<img src="img/slide2/Colin-CurrieNylind.jpg">
+						</div>
+						<h2>THEIR LEAD</h2>
+					</div>
+					<div class="rowbox3">
+						<div class="imgbox1">
+							<img src="img/slide2/Milos-Karadaglic.jpg">
+						</div>
+						<div class="textbox">
+							<p>Academy alumni shape musical culture in<br>countless ways.</p>
+							<ul>
+								<li><a href="#">ALUMNI PORTAL</a></li>
+								<li><a href="#">MEET OUR ALUMNI</a></li>
+								<li><a href="#">ALUMNI BENEFITS</a></li>
+							</ul>
+						</div>
+						<div class="imgbox2">
+							<img src="img/slide2/Alexis-Ffrench.jpg">
+						</div>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box12">
+					<div class="row1">
+						<h2>YOUR FUTURE STARTS HERE</h2>
+						<p>Ready to take the next step on your musical journey? Find out more about our courses and how to apply.</p>
+						<div class="button">
+							<a href="#">NEXT STEPS</a>
+							<svg viewBox="0 0 18 18">
+								<polygon fill-rule="evenodd" fill="currentcolor" stroke="currentcolor" stroke-width=".5" points="0 .682 6.635 3.999 0 7.317 0 8 8 3.999 0 0" transform="translate(5 5)"></polygon>
+							</svg>
+						</div>
+					</div>
+					<div class="row2">
+						<div class="imgbox">
+							<img src="img/Day-in-the-Life-of-Students.jpg">
+						</div>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="bigbox13">
+					<div class="borderbox"></div>
+					<img src="img/Performing-Live-in-the-Dukes-Hall.jpg">
+					<div class="aling-box13">
+						<div class="row1">
+						</div>
+						<div class="row2">
+							<h2>WHY STUDY AT THE ACADEMY?</h2>
+							<p>Simon Rattle, Felicity Lott, Elton John and Harrison Birtwistle all learnt their craft here. We're excited to discover who’s next.</p>
+							<div class="button">
+								<a href="#">IMAGINE YOURSELF HERE</a>
+								<svg viewBox="0 0 18 18">
+									<polygon fill-rule="evenodd" fill="currentcolor" stroke="currentcolor" stroke-width=".5" points="0 .682 6.635 3.999 0 7.317 0 8 8 3.999 0 0" transform="translate(5 5)"></polygon>
+								</svg>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box14">
+					<a href="#" class="rowbox1">
+						<div class="columnbox">
+							<p class="p1">GENERAL NEWS</p><p>10 DECEMBER 2021</p>
+						</div>
+						<div class="columnbox2">
+							<div class="imgbox">
+								<img src="img/Elton-John-at-the-Dukes-Hall-Royal-Academy-of-Music.jpg">
+							</div>
+							<div class="textbox">
+								<h3>Launching the Sir Elton John Global Exchange Programme</h3>
+								<div class="textbox2">
+									<p class="p3">View&nbsp;</p>
+									<hr class="textline">
+									<p class="p3">&nbsp;Article</p>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="rowbox2">
+						<div class="columnbox">
+							<p class="p1">GENERAL NEWS</p><p>30 NOVEMVER 2021</p>
+						</div>
+						<div class="columnbox2">
+							<div class="imgbox">
+								<img src="img/RS4242_RoyalAcademyMusic.jpg">
+							</div>
+							<div class="textbox">
+								<h3>Plans for Bicentenary celebrations in 2022 announced</h3>
+								<div class="textbox2">
+									<p class="p3">View&nbsp;</p>
+									<hr class="textline">
+									<p class="p3">&nbsp;Article</p>
+								</div>
+							</div>
+						</div>
+						
+					</a>
+				</div>
+				<div class="borderbox14">
+					<h2>LATEST NEWS</h2>
+				</div>
+			</article>
+			<article>
+				<div class="aling-box15">
+					<a href="#" class="box15">
+						<p class="p1">10 December 2021</p>
+						<div class="imgbox">
+							<img src="img/Elton-John-at-the-Dukes-Hall-Royal-Academy-of-Music.jpg">
+						</div>
+						<p class="p2">General news</p>
+						<h2>Launching the Sir Elton John Global Exchange Programme</h2>
+						<div class="textbox">
+							<p class="p3">View&nbsp;</p>
+							<hr class="textline">
+							<p class="p3">&nbsp;Article</p>
+						</div>
+					</a>
+					<a href="#" class="box15">
+						<p class="p1">30 November 2021</p>
+						<div class="imgbox">
+							<img src="img/RS4242_RoyalAcademyMusic.jpg">
+						</div>
+						<p class="p2">General news</p>
+						<h2>Plans for Bicentenary celebrations in 2022 announced</h2>
+						<div class="textbox">
+							<p class="p3">View&nbsp;</p>
+							<hr class="textline">
+							<p class="p3">&nbsp;Article</p>
+						</div>						
+					</a>
+					<a href="#" class="box15">
+						<p class="p1">25 November 2021</p>
+						<div class="imgbox">
+							<img src="img/RS8146_2104-PROS-Frances-Marshall.jpg">
+						</div>
+						<p class="p2">General news</p>
+						<h2>The Academy welcomes Ina De to the Governing Body</h2>
+						<div class="textbox">
+							<p class="p3">View&nbsp;</p>
+							<hr class="textline">
+							<p class="p3">&nbsp;Article</p>
+						</div>
+					</a>						
+					<a href="#" class="box15">
+						<p class="p1">05 November 2021</p>
+						<div class="imgbox">
+							<img src="img/3845.jpg">
+						</div>
+						<p class="p2">General news</p>
+						<h2>Academy announces new Bach in Leipzig concert series</h2>
+						<div class="textbox">
+							<p class="p3">View&nbsp;</p>
+							<hr class="textline">
+							<p class="p3">&nbsp;Article</p>
+						</div>					
+					</a>
+				</div>
+			</article>
+		</dis>
+		<footer>
+			<div id="footerbox">
+				<div class="ftnav">
+					<div class="iconbox">
+						<ul>
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+							<li><a href="#"><i class="fab fa-weixin"></i></a></li>
+						</ul>
+					</div>
+					<div class="textbox">
+						<ul>
+							<li><a href="#">SUPPORT THE ACADEMY</a></li>
+							<li><a href="#">ABOUT US</a></li>
+							<li><a href="#">MUSEUM</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">PEOPLE</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="footerbox2">
+				<img src="img/logo-wide-2x.png">
+				<div class="footer_nav">
+					<ul>
+						<li><a href="#">STUDENTS AND STAFF PORTAL</a></li>
+						<li><a href="#">LIBRARY</a></li>
+						<li><a href="#">CONTACT US</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">SIGN UP TO OUR MAILING LIST</a></li>
+						<li><a href="#">WORK WITH US</a></li>
+						<li><a href="#">ACCESSIBILITY</a></li>
+						<li><a href="#">PRIVACY</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">TERMS AND CONDITIONS</a></li>
+						<li><a href="#">FREEDOM OF INFORMATION</a></li>
+					</ul>
+				</div>
+				<div class="adress">
+					<p>ROYAL ACADEMY OF MUSIC<br>MARYLEBONE ROAD, LONDON NW1 5HT, UK</p>
+				</div>
+				<div class="adress2">
+					<ul>
+						<li>TELEPHONE<span>+44 (0)20 7873 7373</span></li>
+						<li>REGISTERED CHARITY NO.<span>310007</span></li>
+					</ul>
+				</div>
+				<img src="img/logo-crest-2x.png" class="footerlogo">
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

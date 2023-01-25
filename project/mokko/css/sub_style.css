@@ -1,0 +1,138 @@
+@charset "utf-8"
+		*{margin: 0; box-sizing: border-box;}
+		ul,li,ol {margin: 0;padding: 0; list-style: none;}
+		a {text-decoration: none;}
+		input::placeholder {color: #fff; font-family: "cabin"; font-weight: 400;}
+		textarea::placeholder {color: #fff; font-family: "cabin"; font-weight: 400;}
+
+
+		.logo2,.cot3,.cot4 {font-family: "Source Sans Pro"; font-weight: 600;}
+		h2,h3,.link,.cot7 {font-family: "Source Sans Pro"; font-weight: 700;}
+		h4,.headfont {font-family: "Herr Von Muellerhoff";font-weight: 400;}
+		.headfont2 {font-family: "Source Sans Pro"; font-weight: 200;}
+		a,h5,.pt2,.pt1 {font-family: "Source Sans Pro"; font-weight: 400;}
+		.b,p {font-family: "cabin"; font-weight: 400; font-size: 13px;}
+
+
+		#wrap {margin: 0;}
+		#slider {background-image: url(../img/main_img.jpg); background-position: center; background-size: cover;width: 100%; height:450px; background-color:#fff; margin: 0 auto; position: relative; background-attachment: fixed;}
+		#slider:before {content: ""; opacity: 0.4; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #000;}
+		#slider header {width:100%; height:450px; position: absolute; margin: 0 auto;}
+
+				/*-----------nav-------------*/
+
+		#slider header #navbox {width: 100%; height: 60px; position: fixed; z-index: 30;}
+			.b ul {display: flex; line-height: 60px; font-size: 13px; margin: 0 25px 0 0px;}
+
+		#slider	header #navbox .navbox2 {max-width: 1250px; height: 60px; margin: 0 auto;}
+		#slider header #navbox .navbox2 nav {display: flex; justify-content: space-between; line-height: 60px;}
+		#slider header #navbox .navbox2 .small .logo .logo2 {font-size: 32px; color: #fff; margin: 0 0 0 20px;letter-spacing: 3px;}
+		 	.a {width: 25px; height: 25px; cursor: pointer; z-index: 10;}
+
+
+		#slider header .headerbox {max-width: 1250px ;height: 150px; display: flex; flex-direction:column; align-items: center; justify-content: center; margin: 0 auto; position: relative;}
+		#slider header .headerbox .headfont {color: #c59d5f; font-size: 100px; margin: 320px 0 0 0px;}
+		#slider header .headerbox .headfont2 {font-size: 47px; color: #fff; letter-spacing: 8px; margin: -30px 0 0 0px;}
+
+		#slider header .boderbox {width: 100%; height: 15px; background-image: url(../img/wave.png); 
+			position: absolute;left: 0; bottom: -1px;}
+
+
+
+
+			/*--------------left---------------*/
+
+
+
+
+		section {width: 100%; height: auto; background-color: #fff; margin: 0 auto; position: relative;}
+
+
+		section #subweb .leftweb .leftcontent {width:100%; height: auto; background-color: #fff; display: flex; flex-direction: column;
+			margin: 0% 0% 1% 0; padding: 10% 0%; border-bottom: 1px solid #ececec;}
+		section #subweb .leftweb .leftcontent h2 {font-size: 33px; margin:0px 0px 5px 0px; color: #1d1d1d;}
+		section #subweb .leftweb .leftcontent .cot {font-size: 15px; margin: 0px 0px 5px 0px;}
+		section #subweb .leftweb .leftcontent h3 {font-size:25px; margin: 5px 0px; color: #292929;}
+		section #subweb .leftweb .leftcontent .cot2 {font-size: 15px; margin: 5px 0px 20px 0px; line-height: 20px;}
+		section #subweb .leftweb .leftcontent .link {font-size: 17px; color: #c59d5f;}
+		section #subweb .leftweb .leftcontent .link:hover {color: #9d7f51; transition: 0.3s ease-out;}
+		section #subweb .leftweb .leftcontent img {width: 100%; height:65%; border-radius: 5px;display: block; margin: 2% 0%;}
+
+
+		section #subweb .leftweb .leftcontent_1 {width:100%; height: auto; background-color: #fff; display: flex; flex-direction: column;
+			margin: 0% 0% 1% 0; padding: 10% 0 5% 0%;}
+		section #subweb .leftweb .leftcontent_1 .imgbox {width: 100%; height: auto; display: flex; justify-content: space-between;}
+		section #subweb .leftweb .leftcontent_1 .imgbox img {width: 32.5%; height:100%; border-radius: 5px;display: block;}
+		section #subweb .leftweb .leftcontent_1 h2 {font-size: 33px; margin:30px 0px 5px 0px; color: #1d1d1d;}
+		section #subweb .leftweb .leftcontent_1 .cot {font-size: 15px; margin: 0px 0px 5px 0px;}
+		section #subweb .leftweb .leftcontent_1 h3 {font-size:25px; margin: 5px 0px; color: #292929}
+		section #subweb .leftweb .leftcontent_1 .cot2 {font-size: 15px; margin: 5px 0px 20px 0px; line-height: 20px;}
+		section #subweb .leftweb .leftcontent_1 .link {font-size: 17px; color: #c59d5f;}
+		section #subweb .leftweb .leftcontent_1 .link:hover {color: #9d7f51; transition: 0.3s ease-out;}
+
+
+
+		section #subweb .leftweb .leftcontent_1 .iconbox {display: flex; justify-content: space-between; width: 100%; height:auto;
+			background-color: #fff; align-items: center; margin: 30px 0 0 0; padding: 15px 0 0 0; border-top: 1px solid #ececec;}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 {display: flex; font-size: 20px; color: #c59d5f; align-items: center;}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 .icon {background-color: #c59d5f; border-radius: 150px; width: 30px;
+			height: 30px; display: flex; align-items: center; justify-content: center;}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 .icon:hover {box-shadow: 2px 2px 2px #ccc; transition: 0.2s}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 .icon img {width: 17px; height: 17px;}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 .tag {padding: 5px 0 0 0;}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 .tag:hover {color: #c59d5f}
+		section #subweb .leftweb .leftcontent_1 .iconbox .cot7 a {font-size: 14px; color: #181818; margin: 0 2px;}	
+		
+
+		
+		section #subweb .leftweb .leftcontent_comt textarea {width: 95%; min-height: 100px; border-radius: 5px; border: 0px;
+			background-color: #d5bf9c; color: #fff; margin: 0 0 1% 0%;}
+
+		section #subweb .leftweb .leftcontent_comt .inputbox {width: 95%; height: auto ; display: flex;
+			justify-content: space-between; background-color: #fff;}
+		section #subweb .leftweb .leftcontent_comt .inputbox .input_3 {width: 49%; height: 35px;
+		background-color: #d5bf9c; border-radius: 5px; color: #fff; border: 0px;}
+
+
+
+			/*-------------right----------------*/
+
+
+
+
+		section #subweb .rightweb .rightbox .rightcontent h4 {font-size:40px; margin: 10px 0px; color:#fff; }
+		section #subweb .rightweb .rightbox .rightcontent h5 {font-size:20px; margin: -12px 0 20px 0px; color:#393939; letter-spacing: 0.5px;}
+		section #subweb .rightweb .rightbox .rightcontent .cot2 {font-size: 14px; line-height: 19px; color: #393939}
+		section #subweb .rightweb .rightbox .rightcontent .cot3 {font-size: 17px; margin: 3% 0%; color: #393939;}
+		section #subweb .rightweb .rightbox .rightcontent .cot3 img {width: 17px; height: 17px; margin: 1px 4px 0 0;}
+
+		section #subweb .rightweb .rightbox .rightcontent .textbox {width: 100%; height: auto; display: flex;}
+		section #subweb .rightweb .rightbox .rightcontent .textbox  .input_1 {width:100%; height: 30px; border: 0px;}
+		section #subweb .rightweb .rightbox .rightcontent .textbox .iconbox img{width: 13px; height: 13px;}
+
+		section #subweb .rightweb .rightbox .rightcontent .tagbox {width: 100%; height: auto; display: flex; flex-wrap: wrap;}
+		section #subweb .rightweb .rightbox .rightcontent .tagbox a {padding: 6px 18px; margin: 1% 1%; color:#fff; border: 1px solid #fff}
+		section #subweb .rightweb .rightbox .rightcontent .tagbox a:hover {background-color:#fff; color: #c59d5f; transition: 0.5s ease;}
+
+
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox img {width: 25%; height: 25%;}
+		section #subweb .rightweb .rightbox .rightcontent .post .textbox {width: 75%; height: auto; display: flex; flex-direction: column;
+		justify-content: center; margin: 0 0% 0% 3%;}
+		section #subweb .rightweb .rightbox .rightcontent .post .textbox .cot4 {font-size: 14px; margin: 0 0 3% 0; color:#393939;
+			line-height: 17px;}
+		section #subweb .rightweb .rightbox .rightcontent .post .textbox .cot5 {font-size: 12px; color: #575757; line-height: 14px;}
+
+		section #subweb .rightweb .rightbox .rightcontent ul li {line-height: 30px;}
+		section #subweb .rightweb .rightbox .rightcontent ul li a {color: #575757; font-size: 15px;cursor: pointer;}
+		section #subweb .rightweb .rightbox .rightcontent ul li a:hover {color: #fff;}
+
+
+		section #subweb .rightweb .rightbox .rightcontent .imgbox img {width: 32%; height: 32%; cursor: pointer; margin: 1% 0%;}
+		section #subweb .rightweb .rightbox .rightcontent .imgbox img:hover {opacity: 0.7; transition: 0.2s;}
+
+
+		footer {width: 100%; height: 80px; background-color: #2d2d2d; margin: 0 auto;}
+		footer .footerbox {max-width: 1250px; height: 80px; background-color: #2d2d2d; display: flex; margin: 0 auto; justify-content: center;}
+
+		footer .footerbox p {color: #fff; font-size: 16px; margin: 30px 0;}
+		footer .footerbox .pt2 {color: #c59d5f}

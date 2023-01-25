@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+		@media (max-width: 654px) {
+
+		#slider header #navbox {width: 100%; height: 60px; position: fixed; z-index: 30;}
+		#slider header #navbox .navbox2 nav {line-height: 10px; display: flex; flex-direction: column; }
+		#slider header #navbox .navbox2 nav .small {display: flex; align-items: center; justify-content: space-between; width: 100%; height: 60px;}
+		#slider header #navbox .navbox2 nav .small .logo {display: flex; justify-content: center;width: 100%; padding: 0 50px 0 0px;}
+
+
+		.b ul {display: flex; flex-direction: column; background-color: rgb(0, 0, 0, 0.5); width: 100%;}
+		.b ul li a {display: block; color:#fff; padding: 0 0 0 25px; z-index: 10; width: 100%;}
+		.b ul li a:hover {background-color: #000; color:#c59d5f; transition: 0.2s ease-out;}
+		.a {display: block; margin: 0 0 0 20px;}
+		.b {display: none;}
+
+		/*-----------nav-------------*/
+		/*-----------left-------------*/
+
+		section #subweb {max-width: 1250px; height: auto; background-color: #fff; margin: 0 auto; padding: 20px 0px;
+		display: flex; flex-flow: wrap; flex-direction: column; align-content: center;}
+		section #subweb .leftweb {width: 90%; height: auto; background-color: #fff; display: flex; flex-direction: column;}
+		section #subweb .leftweb .leftcontent_comt {width: 100%; height: auto; background-color: #f6f4f0;display: flex; 
+			flex-direction: column; justify-content: center; align-items: center; padding: 0 0 5% 0; margin: 0 0 0 0;}
+
+
+			/*--------------riview---------------*/
+
+		section #subweb .leftweb .leftcontent_2 {width: 94%; min-height: 420px; background-color: #fff; display: flex;
+		 flex-direction: column; background-color: #f6f4f0; padding: 7% 3% 0% 3%;}
+		section #subweb .leftweb .leftcontent_2 h2 {font-size: 23px; color: #1d1d1d; margin: 0% 2%;}
+		section #subweb .leftweb .leftcontent_2 h2:last-child {font-size: 23px; color: #1d1d1d; padding: 30px 0 15px 0;}
+		section #subweb .leftweb .leftcontent_2 .review {width:100%; min-height: 120px; background-color: #f6f4f0; display: flex; 
+			border-bottom: 0px solid #a5834e; align-items: center; justify-content: center; margin: 0 0%;}
+		section #subweb .leftweb .leftcontent_2 .review .imgbox {min-width:10%; min-height: 60%; margin: 0 2% 0 0;}
+		section #subweb .leftweb .leftcontent_2 .review .imgbox img {width: 100%; height: 100%;}
+		section #subweb .leftweb .leftcontent_2 .review .reviewbox {width: 85%; height: auto; display;flex; flex-direction: column;}
+		section #subweb .leftweb .leftcontent_2 .review .name {width: 96%; height: auto; display: flex; flex-direction: column;
+			margin: 1% 0 1% 0%; background-color: #f6f4f0;}
+		section #subweb .leftweb .leftcontent_2 .review .name .cot5 {color: #181818; font-size: 17px; font-weight: bold; margin: 10px 0 0 0;}
+		section #subweb .leftweb .leftcontent_2 .review .name a {color: #c59d5f; border-bottom: 1px solid transparent; width: 45px;}
+		section #subweb .leftweb .leftcontent_2 .review .name a:hover {border-bottom: 1px solid #c59d5f; transition: 0.2s;}
+		section #subweb .leftweb .leftcontent_2 .review .textbox {width: 98%; height: auto; display: flex;}		
+		section #subweb .leftweb .leftcontent_2 .review .textbox .cot6 {color: #666; font-size: 13px; line-height: 16px;}
+
+
+
+		/*-----------right-------------*/
+
+		section #subweb .rightweb {width: 90%; height: auto; background-color: #fff; display: flex; flex-direction: column;
+		padding: 12.5% 0 0 0; align-items: center;}		
+		section #subweb .rightweb .rightbox {width: 100%; height: auto; background-color: #d5bf9c; position: relative;}
+		section #subweb .rightweb .rightbox .rightcontent {width: 90%; height: auto;  margin: 10% 1%; padding: 2% 5%;
+		display: flex; flex-direction: column; align-content: center; justify-content: center;}
+		section #subweb .rightweb .rightbox .rightcontent .textbox .iconbox {width: 10%; height: 30px; display: flex; 
+		align-items: center; justify-content: center; margin: 0 0 0 -9%;}
+
+		section #subweb .rightweb .rightbox .rightcontent .post {display: flex; width: 100%; height: auto; flex-direction: column;}
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox {width: 90%; height: auto; display: flex; margin: 1% 0%; padding: 3%; border: 1px solid transparent;}
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox:hover {border: 1px solid #fff; cursor: pointer; transition:0.3s; background-color: #fff;}
+
+		section #subweb .rightweb .rightbox .rightcontent .imgbox {width: 100%; max-height: 300px; display: flex;
+			flex-flow: wrap; align-items: center; justify-content: space-around;}
+		}
+
+
+
+
+
+		@media all and (min-width: 655px) and (max-width: 900px) {
+
+		#slider header #navbox {width: 100%; height: 60px; position: fixed; z-index: 30;}
+			.b ul {display: flex; line-height: 60px; font-size: 13px; margin: 0 20px 0 0px;}
+			.b ul li a {color: #fff; transition: 0.3s ease; padding: 15px; cursor: pointer;}
+			.b ul li a:hover {color:#c59d5f;}
+			.a {display: none;}
+			.a > img {display: none;}
+
+			/*-----------nav-------------*/
+			/*-----------left-------------*/
+
+		section #subweb {max-width: 1250px; height: auto; background-color: #fff; margin: 0 auto; padding: 20px 0px;
+		display: flex; flex-flow: wrap; flex-direction: column; align-content: center;}
+		section #subweb .leftweb {width: 90%; height: auto; background-color: #fff; display: flex; flex-direction: column;}
+		section #subweb .leftweb .leftcontent_comt {width: 100%; height: auto; background-color: #f6f4f0;display: flex; 
+			flex-direction: column; justify-content: center; align-items: center; padding: 0 0 5% 0; margin: 0 0 0 0;}
+
+
+			/*--------------riview---------------*/
+
+		section #subweb .leftweb .leftcontent_2 {width: 94%; min-height: 420px; background-color: #fff; display: flex;
+		 flex-direction: column; background-color: #f6f4f0; padding: 7% 3% 0% 3%;}
+		section #subweb .leftweb .leftcontent_2 h2 {font-size: 23px; color: #1d1d1d; margin: 0% 2%;}
+		section #subweb .leftweb .leftcontent_2 h2:last-child {font-size: 23px; color: #1d1d1d; padding: 30px 0 15px 0;}
+		section #subweb .leftweb .leftcontent_2 .review {width:100%; min-height: 120px; background-color: #f6f4f0; display: flex; 
+			border-bottom: 0px solid #a5834e; align-items: center; justify-content: center; margin: 0 0%;}
+		section #subweb .leftweb .leftcontent_2 .review .imgbox {min-width:10%; min-height: 60%; margin: 0 2% 0 0;}
+		section #subweb .leftweb .leftcontent_2 .review .imgbox img {width: 100%; height: 100%;}
+		section #subweb .leftweb .leftcontent_2 .review .reviewbox {width: 85%; height: auto; display;flex; flex-direction: column;}
+		section #subweb .leftweb .leftcontent_2 .review .name {width: 96%; height: auto; display: flex; justify-content: space-between;
+			margin: 1% 0 1% 0%; background-color: #f6f4f0;}
+		section #subweb .leftweb .leftcontent_2 .review .name .cot5 {color: #181818; font-size: 17px; font-weight: bold;}
+		section #subweb .leftweb .leftcontent_2 .review .name a {color: #c59d5f; border-bottom: 1px solid transparent;}
+		section #subweb .leftweb .leftcontent_2 .review .name a:hover {border-bottom: 1px solid #c59d5f; transition: 0.2s;}
+		section #subweb .leftweb .leftcontent_2 .review .textbox {width: 98%; height: auto; display: flex;}		
+		section #subweb .leftweb .leftcontent_2 .review .textbox .cot6 {color: #666; font-size: 13px; line-height: 16px;}
+
+
+
+
+			/*-----------right-------------*/
+
+		section #subweb .rightweb {width: 90%; height: auto; background-color: #fff; display: flex; flex-direction: column;
+		padding: 12.5% 0 0 0; align-items: center;}	
+		section #subweb .rightweb .rightbox {width: 100%; height: auto; background-color: #d5bf9c; position: relative;}
+		section #subweb .rightweb .rightbox .rightcontent {width: 90%; height: auto;  margin: 10% 1%; padding: 2% 5%;
+		display: flex; flex-direction: column; align-content: center; justify-content: center;}
+		section #subweb .rightweb .rightbox .rightcontent .textbox .iconbox {width: 10%; height: 30px; display: flex; 
+		align-items: center; justify-content: center; margin: 0 0 0 -9%;}
+
+
+		section #subweb .rightweb .rightbox .rightcontent .post {display: flex; width: 100%; height: auto; flex-direction: column;}
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox {width: 90%; height: auto; display: flex; margin: 1% 0%; padding: 3%; border: 1px solid transparent;}
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox:hover {border: 1px solid #fff; cursor: pointer; transition:0.3s; background-color: #fff;}
+
+		section #subweb .rightweb .rightbox .rightcontent .imgbox {width: 100%; max-height: 600px; display: flex;
+			flex-flow: wrap; align-items: center; justify-content: space-around;}
+		}
+
+
+
+
+
+
+		@media (min-width: 901px){
+
+		#slider header #navbox {width: 100%; height: 60px; position: fixed; z-index: 30;}
+			.b ul {display: flex; line-height: 60px; font-size: 13px; margin: 0 20px 0 0px;}
+			.b ul li a {color: #fff; transition: 0.3s ease; padding: 15px; cursor: pointer;}
+			.b ul li a:hover {color:#c59d5f;}
+			.a {display: none;}
+			.a > img {display: none;}
+
+			/*-----------nav-------------*/
+			/*-----------left-------------*/
+
+		section #subweb {max-width: 1250px; height: auto; background-color: #fff; margin: 0 auto; padding: 20px 0 20px 40px;
+			display: flex; flex-flow: wrap;}
+		section #subweb .leftweb {width: 65%; height: auto; background-color: #fff; display: flex; flex-direction: column;}
+		section #subweb .leftweb .leftcontent_comt {width: 100%; height: auto; background-color: #f6f4f0;display: flex; 
+			flex-direction: column; justify-content: center; align-items: center; padding: 0 0 5% 0; margin: 0 0 10% 0;}
+
+			/*--------------riview---------------*/
+
+		section #subweb .leftweb .leftcontent_2 {width: 100%; min-height: 420px; background-color: #fff; display: flex;
+		 flex-direction: column; background-color: #f6f4f0; padding: 7% 1% 0% 1%;}
+		section #subweb .leftweb .leftcontent_2 h2 {font-size: 23px; color: #1d1d1d; margin: 0% 2%;}
+		section #subweb .leftweb .leftcontent_2 h2:last-child {font-size: 23px; color: #1d1d1d; padding: 30px 0 15px 0;}
+		section #subweb .leftweb .leftcontent_2 .review {width:100%; min-height: 120px; background-color: #f6f4f0; display: flex; 
+			border-bottom: 0px solid #a5834e; align-items: center; justify-content: center; margin: 0 0%;}
+		section #subweb .leftweb .leftcontent_2 .review .imgbox {min-width:10%; min-height: 60%; margin: 0 2% 0 0;}
+		section #subweb .leftweb .leftcontent_2 .review .imgbox img {width: 100%; height: 100%;}
+		section #subweb .leftweb .leftcontent_2 .review .reviewbox {width: 85%; height: auto; display;flex; flex-direction: column;}
+		section #subweb .leftweb .leftcontent_2 .review .name {width: 96%; height: auto; display: flex; justify-content: space-between;
+			margin: 1% 0 1% 0%; background-color: #f6f4f0;}
+		section #subweb .leftweb .leftcontent_2 .review .name .cot5 {color: #181818; font-size: 17px; font-weight: bold;}
+		section #subweb .leftweb .leftcontent_2 .review .name a {color: #c59d5f; border-bottom: 1px solid transparent;}
+		section #subweb .leftweb .leftcontent_2 .review .name a:hover {border-bottom: 1px solid #c59d5f; transition: 0.2s;}
+		section #subweb .leftweb .leftcontent_2 .review .textbox {width: 98%; height: auto; display: flex;}		
+		section #subweb .leftweb .leftcontent_2 .review .textbox .cot6 {color: #666; font-size: 13px; line-height: 16px;}
+
+
+
+			/*-----------right-------------*/
+
+		section #subweb .rightweb {width: 35%; height: auto; background-color: #fff; display: flex; flex-direction: column;
+		padding: 12.5% 0 0 0; align-items: center; }	
+		section #subweb .rightweb .rightbox {width: 85%; height: auto; background-color: #d5bf9c; position:relative;}
+		section #subweb .rightweb .rightbox .rightcontent {width: 80%; height: auto;  margin: 10% 1%; padding: 2% 5%;
+		display: flex; flex-direction: column; }
+
+		section #subweb .rightweb .rightbox .rightcontent .textbox .iconbox {width: 10%; height: 30px; display: flex; 
+		align-items: center; justify-content: center; margin: 0 0 0 -11%;}
+
+		section #subweb .rightweb .rightbox .rightcontent .post {display: flex; width: 100%; height: auto; flex-direction: column;}
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox {width: 90%; height: auto; display: flex; margin: 1% 0%; padding: 3%; border: 1px solid transparent;}
+		section #subweb .rightweb .rightbox .rightcontent .post .postbox:hover {border: 1px solid #fff; cursor: pointer; transition:0.3s; background-color: #fff;}
+
+		section #subweb .rightweb .rightbox .rightcontent .imgbox {width: 100%; max-height: 600px; display: flex;
+			flex-flow: wrap; align-items: center; justify-content: space-around;}
+
+
+		}

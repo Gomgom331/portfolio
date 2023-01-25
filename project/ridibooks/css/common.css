@@ -1,0 +1,111 @@
+@charset "utf-8";
+    /******header******/
+    header {width:100%; text-align: center;}
+    header nav {width: 100%; height: 40px; border-bottom: 1px solid #f0f0f0; }
+    header nav #nav_box {max-width:1170px; height: 40px; margin: 0 auto; display: flex; justify-content: space-between; padding:0px 18px;}
+        #nav_box ul {display: flex; align-items: center;}
+        #nav_box ul li {color:#e6e6e6; font-weight: bold;}
+        #nav_box ul li a {font-size:14px; color:#787878; padding:0px 10px; letter-spacing: -0.5px; transition: ease-in 0.1s;}
+        #nav_box ul li:nth-of-type(5) a {color:#141414}
+
+        #nav_box ul li a:hover {opacity: 0.5;}
+    /*로고,서치부분*/
+    header .header_title {max-width: 1170px; height: 72px; margin:0 auto; display: flex; align-items: center; padding:16px 18px 16px 22px;}
+        .header_title .main_rogo {margin-right: auto;}
+            .ridi {padding:8px 0px 9px 8px;}
+            .books {padding:8px 8px 9px 0;}
+
+        .header_title .header_serch {width:260px; height:40px; margin-right: 8px;}
+            .header_serch_box {background-color: #f0f0f0; border: 1px solid rgba(0, 0, 0, 0.5%); border-radius: 8px; 
+                padding:0 11px; height: 40px; align-items: center; width: 260px; display: flex;}
+            .header_serch_box svg {width: 16px; height: 16px; font-size:16px; color:#787878; margin-right:12px;}
+            .header_serch_box input {font-size:15px; line-height:18px; letter-spacing:-1px; color:#141414; height: 100%; border:0px; background-color:#f0f0f0; outline:0;}
+        
+        .header_title .header_fig {display: flex; align-items:center; width: 208px; height: 40px;}
+        .header_title .header_fig > div {width: 40px; height: 40px; padding:6px; margin:0 6px;}
+        .header_title .header_fig > div > a > svg {font-size: 28px; transition: ease-in 0.1s;}
+        .header_title .header_fig > div > a > svg:hover {color:#787878;}
+
+
+    /******footer******/
+    footer {width:100%; height: 475px; padding:100px 0 0 0; background-color: #fff; margin:0 auto;}
+    footer .footer_line {display: block; width: 100%; height: 1px; border:none; background-color: #f0f0f0;}
+    footer .footer_box {max-width: 1170px; background-color: #fff; margin:0 auto; padding:41px 26px 20px; display: flex;}
+                .footer_column1 {display: flex; flex-direction:  column; margin:0 185px 0 0;} 
+                .footer_column1 .footer_nav_row1 {display: flex;}
+                    .footer_nav_row1 ul {width:185px; height: 164px;}
+                    .footer_nav_row1 ul li a {font-size:13px;}
+                        .footer_nav_row1_column1 li a:hover {opacity: 0.5;transition:0.3s;}
+
+                    .footer_nav_row1_column1 {height: 24px; font-weight: bold; display: flex; flex-direction: column;}
+                    .footer_nav_row1_column1 li {margin:0 0 20px 0;}
+                    .footer_nav_row1_column1 li a {color:#787878; display: flex; align-items: center;}
+                    .footer_nav_row1_column1 li a svg {margin:0 6px 0 0px;}
+
+                    .footer_nav_row1_column2 li {margin: 0 0 6px 0;}
+                    .footer_nav_row1_column2 li a {color:#787878; }
+                    .footer_nav_row1_column2 li:not(:first-child):hover {opacity: 0.5;transition:0.3s;}
+                                                    /*인재채용 아이콘*/
+                                                 .Re_icon {font-size:11px;}
+                    .footer_nav_row1_column2 .footer_nav_row1_text_title {font-size:13px; font-weight: bold; margin:0 0 12px;}
+                /*사업자 정보*/
+                .footer_column1 .footer_nav_row2 {margin-top:60px; margin-bottom: 20px;}
+
+                    .footer_nav_row2_row1 {
+                        color:#787878; 
+                        font-size:12px; 
+                        font-weight: 700; 
+                        margin-bottom: 7px;
+                        background-color: #fff; 
+                        border:none; 
+                        text-align: center; 
+                        cursor:pointer;
+                    }
+
+                    .footer_nav_row2_row2 {display: flex;}
+                    .footer_nav_row2_row2 li:nth-child(2) {font-weight: bold;}
+                    .footer_nav_row2_row2 li a {font-size: 11px; color:#787878; transition: ease-in 0.15s;}
+                    .footer_nav_row2_row2 li a:hover {opacity: 0.5;}
+                    .footer_nav_row2_row2 li:not(:first-child)::before {
+                        content: '';
+                        display: inline-block;
+                        background: #f0f0f0;
+                        width: 1px;
+                        height: 9px;
+                        margin: 2px 6px;
+                    }
+
+                    /* 버튼숨김 */
+                    
+                    .footer_nav_row2_row1 > span.btnChg > svg#btnBox{
+                        font-size: 9px;
+                    }
+                    .footer_nav_row2_row1 > span.btnChg > svg.chgCss1 {
+                        transform: rotate(90deg); 
+                    }
+                    .footer_nav_row2_row1 > span.btnChg > svg.chgCss2 {
+                        transform: rotate(270deg)
+                    }
+                    div.footer_nav_row2 ul.Entrepreneur_btn_box {
+                        display: none;
+                        padding:0px 0px 10px 0px;
+                        height: 140px;
+                    }
+                    div.footer_nav_row2 ul.Entrepreneur_btn_box li a {
+                        color:#787878;
+                        font-size:11px;
+                    }
+
+                    .footer_nav_row2_row3 {font-size:11px; color:#787878; margin-top:16px;}
+                    .footer_nav_row2_row3 span {font-size: 11px;}
+
+                .footer_column2 ul {display: flex;}
+                .footer_column2 ul li {margin-left: 10px;}
+                .footer_column2 ul li a {width: 44px; height: 44px; border: 1px solid #e6e6e6; display: flex; 
+                    align-items: center; justify-content: center; border-radius: 22px; color:#787878;}
+                    .footer_column2 ul li a:hover {
+                        background-color: #787878; 
+                        color: #fff;
+                        transition: 0.3s;
+                    }
+
